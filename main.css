@@ -38,3 +38,64 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+.acc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.75rem 1.25rem; */
+  /* background-color: rgb(77, 124, 15); */
+  color: black;
+  cursor: pointer;
+  /* border-top: 1px solid rgb(101, 163, 13); */
+  /* border-bottom: 1px solid rgb(101, 163, 13); */
+}
+
+.acc-header:hover {
+  /* background-color: rgb(101, 163, 13); */
+}
+
+.acc-header svg {
+  transition-duration: 300ms;
+}
+
+.acc-header p {
+  /* font-weight: 600; */
+}
+
+.acc-body {
+  max-width: 70%;
+  background-color: rgb(245, 245, 244);
+  /* padding: 0 1.25rem; */
+  font-size: 0.875rem;
+  font-weight: 300;
+  overflow: hidden;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.acc-item {
+  padding: 14px 0;
+  border-bottom: 0.5px solid #201E1F;
+}
+
+.acc-item:first-child {
+  border-top: 0.5px solid #201E1F;
+}
+
+.acc-item.close .acc-body {
+  max-height: 0;
+  opacity: 0;
+}
+
+.acc-item.open .acc-header svg {
+  transform: rotate(180deg);
+}
+
+.acc-item.open .acc-body {
+  max-height: max-content;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  opacity: 1;
+}
