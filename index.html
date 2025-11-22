@@ -9,6 +9,7 @@
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./main.css" />
   <script>
@@ -60,8 +61,21 @@
       </div>
     </section>
     <!-- Galería -->
-    <section class="" id="about">
-      <img src="./assets/swiper-1.png" alt="I">
+    <section class="h-[500px]" id="about">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/swiper-1.png" alt="Imagen de la galería" height="100px">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/project-image-2.png" alt="Imagen de la galería" height="100px">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/project-image-3.png" alt="Imagen de la galería" height="100px">
+          </div>
+        </div>
+        <div class="swiper-pagination color-black text-black "></div>
+      </div>
     </section>
     <!-- Por qué confiar -->
     <section class="py-20 px-20" id="why-trust">
@@ -345,10 +359,9 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    Incluye todo lo necesario para definir cómo se va a ver y cómo va a funcionar tu nuevo depa o casa: propuesta de distribución, estilo, selección de materiales y diseño de mobiliario a medida. 
+                    También entregamos los planos necesarios para ejecutar la obra. 
+                    Si lo necesitas, podemos incluir renders para ayudarte a visualizar el resultado con mayor claridad. 
                   </p>
                 </div>
               </div>
@@ -373,10 +386,9 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    Sí. Toda remodelación que hacemos parte de un proyecto de diseño. 
+                    Esto nos permite definir bien cada detalle — distribución, estilo, materiales, mobiliario, tiempos y costos — antes de comenzar la obra. 
+                    Evita cambios de último minuto, errores costosos y asegura un mejor resultado. 
                   </p>
                 </div>
               </div>
@@ -401,10 +413,8 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    Sí. Aunque muchos clientes nos eligen para encargarnos de todo,
+                    también puedes contratar únicamente el proyecto de diseño y ejecutarlo por tu cuenta. 
                   </p>
                 </div>
               </div>
@@ -429,10 +439,8 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    No ofrecemos mantenimiento por separado. 
+                    Si ya trabajaste con nosotros y necesitas mantenimiento en tu espacio, escríbenos directamente. Siempre buscamos acompañar a nuestros clientes más allá del proyecto inicial.
                   </p>
                 </div>
               </div>
@@ -457,10 +465,9 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    Trabajamos principalmente en proyectos donde se puede transformar el espacio de forma integral — cambiando distribución, materiales, muebles a medida, etc. 
+                    Por eso, si el depa es rentado y no permite muchas modificaciones, es posible que no sea el mejor momento para trabajar juntos. 
+                    Pero si estás buscando una renovación a fondo y tienes libertad para hacer cambios, escríbenos y lo evaluamos contigo 
                   </p>
                 </div>
               </div>
@@ -470,7 +477,7 @@
             <div id="accordion">
               <div class="acc-item close">
                 <div class="acc-header">
-                  <p>Vivo en un depa rentado, ¿puedo hacer un proyecto con ustedes?</p>
+                  <p>¿Se puede remodelar solo una parte de mi casa o depa? </p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -489,10 +496,64 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    Sí. Podemos trabajar en espacios individuales como la cocina, un baño, una recámara, una sala, un rooftop, un patio… 
+                    Lo importante es que el proyecto tenga un enfoque completo dentro de ese espacio: distribución, acabados, materiales y, si hace falta, mobiliario a la medida. 
+                    Más que cambios aislados, buscamos transformar el espacio para que realmente se sienta y funcione mejor.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿También remodelan casas? </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Sí. Nuestro servicio está pensado para quienes quieren transformar
+                    su hogar con diseño, planeación y ejecución profesional. 
+                    No importa si es un depa, una casa o un loft.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Trabajan solo en la Ciudad de México?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Principalmente sí, pero si estás en una zona cercana y tienes un proyecto
+                    que requiera diseño, planeación y ejecución profesional, también podrías
+                    contar con nosotros. Lo importante es que busques un servicio integral,
+                    con diseño de calidad y una ejecución con atención al detalle.
                   </p>
                 </div>
               </div>
@@ -502,7 +563,7 @@
             <div id="accordion">
               <div class="acc-item close">
                 <div class="acc-header">
-                  <p>¿Necesito un proyecto de diseño obligatoriamente?</p>
+                  <p>¿Cuánto cuesta el proyecto de diseño interior?</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -521,10 +582,39 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    Depende del tamaño del espacio, cuántas áreas se van a intervenir y el nivel de detalle que se busca. 
+                    Cada proyecto es distinto, por eso cotizamos de forma personalizada según tus necesidades. 
+
+                    Ofrecemos un servicio pensado para quienes quieren transformar su espacio con un diseño bien planeado y una ejecución cuidada. 
+                    Si quieres saber cuánto podría costar tu proyecto, escríbenos por WhatsApp.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Cuánto tiempo toma el proyecto completo?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Cada proyecto es diferente, pero en promedio: 
+                    El diseño puede tomar de 3 a 6 semanas. 
+                    La ejecución de obra y entrega, de 6 a 10 semanas. 
+                    Desde el inicio te compartimos un cronograma claro, para que tengas visibilidad de todo el proceso y sepas qué esperar en cada etapa.
                   </p>
                 </div>
               </div>
@@ -534,7 +624,7 @@
             <div id="accordion">
               <div class="acc-item close">
                 <div class="acc-header">
-                  <p>¿Hacen trabajos de mantenimiento como pintar o impermeabilizar?</p>
+                  <p>¿Qué pasa después del diagnóstico inicial? ¿Ya me entregan ideas o propuestas?</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -553,10 +643,9 @@
                 </div>
                 <div class="acc-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit impedit quasi accusantium perferendis in unde
-                    cupiditate ea veritatis a natus fuga id dolor aliquid odit harum,
-                    nihil similique eos labore!
+                    No. El objetivo del diagnóstico inicial es entender bien tu espacio, tus necesidades y lo que quieres lograr. 
+                    Con eso, preparamos una cotización clara y detallada para el proyecto de diseño interior. 
+                    Una vez contratado el diseño, desarrollamos las propuestas de distribución, estilo, materiales y mobiliario con todo el detalle que tu espacio necesita.
                   </p>
                 </div>
               </div>
@@ -601,6 +690,26 @@
         <p>© 2025 RMD. Todos los derechos reservados.</p>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
     <script>
     const btn = document.querySelector("button.mobile-menu-button");
