@@ -26,23 +26,25 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="grid grid-cols-3 gap-8 px-20 py-10">
-      <a class="col-span-1 col-start-2 flex justify-center" href="/">
-        <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-18 w-auto">
+    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-20 py-10">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+        <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
       </a>
-      <div class="flex justify-end items-center text-lg gap-16">
+      <div class="flex justify-end items-center text-lg gap-4 lg:gap-16">
         <a href="projects.html" class="text-gray-800 hover:text-teal-700">Proyectos</a>
-        <a href="/#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
+        <a href="#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="py-20 mx-auto" id="hero">
-      <div class="mb-12 px-20">
-        <h1 class="hero-title">UN DEPA PENSADO <br> PARA CRECER EN FAMILIA</h1>
-        <h2 class="w-3/6">
+    <section class="py-20 px-6 mx-auto" id="hero">
+      <div class="mb-12 lg:px-20">
+        <h1 class="hero-title mb-6">UN DEPA PENSADO <br> PARA CRECER EN FAMILIA</h1>
+        <h2 class="w-full lg:w-3/6 mb-4 lg:mb-0 font-light">
           En este proyecto ayudamos a una familia joven con dos hijos a
           transformar su depa en un espacio funcional, acogedor y ordenado.
+        </h2>
+        <h2 class="w-full lg:w-4/6 font-light">
           Cada rincón fue diseñado con intención: más almacenaje, muebles 
           a medida, y un rooftop renovado para disfrutar juntos.
         </h2>
@@ -53,81 +55,85 @@
     <section class="mx-auto" id="gallery">
       <div class="grid grid-cols-2">
 
-        <div>
+        <div class="col-span-2 lg:col-span-1 order-1 lg:order-none">
           <img class="w-full object-cover" src="./assets/project-image-1.png" alt="Imagen de proyecto">
         </div>
-        <div class="flex items-center text-right bg-[#F4F4F4] px-20">
-          <div class="text-right w-full">
-            <div class="flex justify-between text-3xl mb-6">
+        <div class="flex items-center bg-[#F4F4F4] lg:px-20 col-span-2 lg:col-span-1 order-2 lg:order-none">
+          <div class="lg:text-right w-full px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
               <h3>01/</h3>
               <h3>MOODBOARD INICIAL</h3>
             </div>
-            <p class="font-light">El punto de partida: un estilo cálido, moderno y funcional, <br> pensado para una familia activa. </p>
+            <p class="font-light">El punto de partida: un estilo cálido, moderno y funcional, pensado para una familia activa.</p>
           </div>
         </div>
 
-        <div class="flex items-center px-20">
-          <div class="w-full">
-            <div class="flex justify-between text-3xl mb-6">
+        <div class="flex items-center lg:px-20 col-span-2 lg:col-span-1 order-4 lg:order-none">
+          <div class="w-full px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
               <h3>RENDERS DEL PROYECTO</h3>
-              <h3>02/</h3>
+              <h3 class="order-first lg:order-none">02/</h3>
             </div>
-            <p class="font-light">Antes de comenzar la obra, así visualizamos el espacio con <br>muebles a medida, tonos neutros y soluciones prácticas.</p>
+            <p class="font-light">Antes de comenzar la obra, así visualizamos el espacio con muebles a medida, tonos neutros y soluciones prácticas.</p>
           </div>
         </div>
-        <div>
+        <div class="col-span-2 lg:col-span-1 order-3 lg:order-none">
           <img class="w-full object-cover" src="./assets/project-image-2.png" alt="Imagen de proyecto">
         </div>
 
-        <div>
+        <div class="col-span-2 lg:col-span-1 order-5 lg:order-none">
           <img class="w-full object-cover" src="./assets/project-image-3.png" alt="Imagen de proyecto">
         </div>
-        <div class="flex items-center bg-[#F4F4F4] px-20">
-          <div class="w-full text-right">
-            <div class="flex justify-between text-3xl mb-6">
+        <div class="flex items-center bg-[#F4F4F4] lg:px-20 col-span-2 lg:col-span-1 order-6 lg:order-none">
+          <div class="w-full lg:text-right px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
               <h3>03/</h3>
               <h3>FOTOS DEL RESULTADO FINAL</h3>
             </div>
-            <p class="font-light">El resultado: un depa funcional, con espacios organizados, <br>detalles pensados y una terraza lista para disfrutarse en familia. </p>
+            <p class="font-light">El resultado: un depa funcional, con espacios organizados, detalles pensados y una terraza lista para disfrutarse en familia. </p>
           </div>
         </div>
 
-        <div class="flex items-center px-20">
-          <div class="w-full">
-            <div class="flex justify-between text-3xl mb-6">
+        <div class="flex items-center lg:px-20 col-span-2 lg:col-span-1 order-8 lg:order-none">
+          <div class="w-full px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
               <h3>PLANO DE DISTRIBUCIÓN <br>O MOBILIARIO</h3>
-              <h3>04/</h3>
+              <h3 class="order-first lg:order-none">04/</h3>
             </div>
-            <p class="font-light">Cada solución fue diseñada para resolver un problema real. <br>Desde el acomodo hasta los muebles, todo tiene su lugar.</p>
+            <p class="font-light">Cada solución fue diseñada para resolver un problema real. Desde el acomodo hasta los muebles, todo tiene su lugar.</p>
           </div>
         </div>
-        <div>
+        <div class="col-span-2 lg:col-span-1 order-7 lg:order-none">
           <img class="w-full object-cover" src="./assets/project-image-4.png" alt="Imagen de proyecto">
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="px-20 py-32 bg-[#F4F4F4]">
+    <section id="contact" class="lg:px-20 px-6 py-32 bg-[#F4F4F4]">
       <div class="flex justify-center mb-6 text-center">
-        <h3 class="w-4/6 text-7xl">¿QUIERES UN ESPACIO <span class="font-bold">ASÍ PARA TI?</span></h3>
+        <h3 class="text-4xl lg:text-7xl">¿QUIERES UN ESPACIO <span class="font-bold"> <br>ASÍ PARA TI?</span></h3>
       </div>
       <div class="text-center mb-6 font-light">
         <p>Agenda una videollamada sin costo y cuéntanos cómo imaginas tu depa.</p>
       </div>
-      <div class="flex justify-center gap-4">
-        <a href="" class="bg-[#201E1F] text-white rounded-lg py-1.5 px-6 text-lg">Agendar una videollamada</a>
-        <a href="" class="rounded-lg py-1.5 px-6 text-lg border border-black">Escríbenos por WhatsApp</a>
+      <div class="flex flex-col lg:flex-row justify-center gap-3 text-lg">
+        <a href="#contact" class="py-2 px-4 text-center bg-black text-white rounded-lg">
+          Agendar videollamada
+        </a>
+        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="border border-black text-center py-2 px-4 text-black rounded-lg">
+          Escríbenos por WhatsApp
+        </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 px-32 bg-[#294038] text-white font-light">
-      <div class="flex items-center justify-between w-full py-10">
+    <footer class="p-4 lg:py-6 lg:px-32 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
         <div>
           <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
         </div>
-        <div class="flex gap-4 text-lg">
+        <div class="flex gap-4 lg:text-lg">
           <a href="#" class="italic">Contacto</a>
           <i>→</i>
           <a href="#" class="italic">Instagram</a>
@@ -139,6 +145,7 @@
       <hr class="border-white">
       <div class="text-center w-full mt-4 font-light">
         <p>© 2025 RMD. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>

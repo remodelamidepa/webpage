@@ -26,42 +26,45 @@
  </head>
   <body class="">
     <!-- Header -->
-    <header class="grid grid-cols-3 gap-8 px-20 py-10">
-      <a class="col-span-1 col-start-2 flex justify-center" href="/">
-        <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-18 w-auto">
+    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-20 py-10">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+        <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
       </a>
-      <div class="flex justify-end items-center text-lg gap-16">
+      <div class="flex justify-end items-center text-lg gap-4 lg:gap-16">
         <a href="projects.html" class="text-gray-800 hover:text-teal-700">Proyectos</a>
         <a href="#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
       </div>
     </header>
     <!-- Hero Section -->
-    <section class="py-20 mx-auto" id="hero">
-      <div class="mb-12 flex justify-center">
-        <h1 class="hero-title">
-          <span>TU ESPACIO SOÑADO,</span> <br />
-          <span class="ml-14">SIN QUE TENGAS QUE MOVER</span> <br />
+    <section class="py-20 mx-auto px-6 lg:px-0" id="hero">
+      <div class="mb-6 lg:mb-12 flex justify-center flex-col lg:flex-row">
+        <h1 class="hero-title mb-6">
+          <span class="font-light">TU ESPACIO SOÑADO,</span> <br />
+          <span class="lg:ml-14">SIN QUE TENGAS QUE MOVER</span> <br />
           <span class="flex items-center">
             <span class="mr-4">
               UN DEDO
             </span>
-            <span class="text-[18px] leading-tight">
+            <span class="text-[18px] leading-tight hidden lg:block">
               Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. <br> Tu solo entras y disfrutas.
             </span>
           </span>
         </h1>
+        <p class="block lg:hidden font-light">
+          Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. Tu solo entras y disfrutas.
+        </p>
       </div>
-      <div class="flex justify-center gap-3 text-lg">
-        <a href="#contact" class="py-2 px-4 bg-black text-white rounded-lg">
+      <div class="flex flex-col lg:flex-row justify-center gap-3 text-lg">
+        <a href="#contact" class="py-2 px-4 text-center bg-black text-white rounded-lg">
           Agendar videollamada
         </a>
-        <a href="#" class="border border-black py-2 px-4 text-black rounded-lg">
+        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="border border-black text-center py-2 px-4 text-black rounded-lg">
           Escríbenos por WhatsApp
         </a>
       </div>
     </section>
     <!-- Galería -->
-    <section class="h-[500px]" id="about">
+    <section class="h-[400px] lg:h-[500px]" id="about">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -78,12 +81,12 @@
       </div>
     </section>
     <!-- Por qué confiar -->
-    <section class="py-20 px-20" id="why-trust">
-      <div class="flex items-start justify-between mb-16">
+    <section class="py-20 px-6 lg:px-20" id="why-trust">
+      <div class="flex flex-col lg:flex-row items-start lg:justify-between mb-16">
         <p class="text-3xl">01/</p>
-        <div class="text-right">
+        <div class="flex flex-col items-start lg:items-end">
           <h2 class="text-3xl mb-4">¿POR QUÉ CONFIAR EN <br> REMODELA MI DEPA?</h2>
-          <p>Porque te acompañamos en cada paso y nos encargamos de <br> todo para que tú disfrutes el resultado sin estrés.</p>
+          <p class="lg:w-[450px] lg:text-right">Porque te acompañamos en cada paso y nos encargamos de todo para que tú disfrutes el resultado sin estrés.</p>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
@@ -139,14 +142,15 @@
         </article>
       </div>
     </section>
+
     <!-- Así trabajamos -->
-    <section class="py-20 px-20 bg-[#294038] text-white" id="how-we-work">
-      <div class="flex items-start justify-between mb-16">
-        <div class="text-left">
+    <section class="py-20 px-6 lg:px-20 bg-[#294038] text-white" id="how-we-work">
+      <div class="flex flex-col lg:flex-row items-start justify-between mb-16">
+        <div class="flex flex-col">
           <h2 class="text-3xl mb-4">ASÍ TRABAJAMOS</h2>
-          <p>Porque te acompañamos en cada paso y nos encargamos de <br> todo para que tú disfrutes el resultado sin estrés.</p>
+          <p class="lg:w-[450px]">Porque te acompañamos en cada paso y nos encargamos de todo para que tú disfrutes el resultado sin estrés.</p>
         </div>
-        <p class="text-3xl">02/</p>
+        <p class="text-3xl order-first lg:order-last">02/</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         <article class="border border-white p-6 rounded-xl min-h-[260px]">
@@ -219,30 +223,35 @@
         </article>
       </div>
     </section>
+
     <!-- Crecer en familia -->
-    <section class="grid grid-cols-2 gap-8" id="grow-as-family">
-      <div class="pl-20 py-20">
-        <div class="flex justify-between mb-16">
+    <section class="grid grid-cols-2 gap-8 px-0 lg:px-20 pb-10 lg:py-20" id="grow-as-family">
+      <div class="col-span-2 lg:col-span-1 px-6 lg:px-0">
+        <div class="flex flex-col lg:flex-row justify-between mb-16">
           <h3 class="text-3xl">UN DEPA PENSADO PARA <br> CRECER EN FAMILIA</h3>
-          <p class="text-3xl">03/</p>
+          <p class="text-3xl order-first lg:order-last">03/</p>
         </div>
-        <p class="leading-tight my-8 w-5/6">
+        <p class="my-8 lg:w-5/6">
           En este proyecto ayudamos a una familia joven con dos hijos a 
           transformar su depa en un espacio funcional, acogedor y ordenado. 
           Cada rincón fue diseñado con intención: más almacenaje, muebles 
           a medida, y un rooftop renovado para disfrutar juntos. 
         </p>
-        <a href="/" class="bg-black text-white rounded-lg py-3 px-10 text-xl">Ver proyecto</a>
+        <a href="/" class="bg-black text-white rounded-md inline-block mt-6 py-3 px-10 text-xl text-center w-full lg:w-auto">
+          Ver proyecto
+        </a>
       </div>
-      <img src="./assets/build-image.png" alt="Imagen de construcción">
+      <div class="order-first lg:order-last col-span-2 lg:col-span-1">
+        <img src="./assets/build-image.png" alt="Imagen de construcción">
+      </div>
     </section>
     <!-- Testimonios -->
-    <section class="p-20 bg-[#F4F4F4] text-lg" id="testimonials">
-      <div class="flex justify-between">
+    <section class="px-6 py-10 lg:py-20 lg:px-20 bg-[#F4F4F4] text-lg" id="testimonials">
+      <div class="flex flex-col lg:flex-row justify-between">
         <h3 class="text-3xl">TESTIMONIOS</h3>
-        <p class="text-3xl">04/</p> 
+        <p class="text-3xl order-first lg:order-last">04/</p> 
       </div>
-      <div class="bg-white max-w-4xl mx-auto p-10 mt-16 rounded-3xl ">
+      <div class="bg-white max-w-4xl mx-auto p-10 mt-16 rounded-3xl shadow-md">
         <div class="mb-8">
           <img src="./assets/stars.svg" alt="Calificación de 5 estrellas">
         </div>
@@ -261,12 +270,12 @@
       </div>
     </section>
       <!-- Conoce al equipo -->
-    <section class="p-20 text-lg" id="team">
-      <div class="flex justify-between">
+    <section class="py-10 px-6 lg:px-20 lg:py-20 text-lg" id="team">
+      <div class="flex flex-col lg:flex-row justify-between">
         <p class="text-3xl">05/</p> 
-        <div class="text-right max-w-lg">
+        <div class="flex flex-col items-start lg:items-end">
           <h3 class="text-3xl mb-4">CONOCE AL EQUIPO</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+          <p class="lg:text-right lg:w-[450px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
@@ -295,7 +304,7 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="px-20 py-32 bg-[#F4F4F4] text-lg">
+    <section id="faq" class="py-10 px-6 lg:px-20 lg:py-32 bg-[#F4F4F4] text-lg">
       <div class="flex justify-between mb-10">
         <div class="max-w-lg">
           <h3 class="text-3xl mb-4">PREGUNTAS FRECUENTES</h3>
@@ -303,35 +312,35 @@
         </div>
         <p class="text-3xl">06/</p> 
       </div>
-      <div class="w-full mx-auto">
-        <div class="flex justify-between">
+      <div class="w-full mx-auto text-sm lg:text-lg">
+        <div class="flex flex-wrap lg:justify-between gap-2 mb-4 lg:mb-0">
           <button
-            class="py-2 px-4 font-medium text-gray-600 border-b-2 border-transparent focus:outline-none"
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
             data-tab="tab1"
             onclick="showTab('tab1')"
           >
-            LO QUE INCLUYE EL SERVICIO
+            Lo que incluye el servicio
           </button>
           <button
-            class="py-2 px-4 font-medium text-gray-600 border-b-2 border-transparent focus:outline-none"
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
             data-tab="tab2"
             onclick="showTab('tab2')"
           >
-            DÓNDE Y CÓMO TRABAJAMOS
+            Dónde y cómo trabajamos
           </button>
           <button
-            class="py-2 px-4 font-medium text-gray-600 border-b-2 border-transparent focus:outline-none"
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
             data-tab="tab3"
             onclick="showTab('tab3')"
           >
-            TIEMPOS Y COSTOS
+            Tiempos y costos
           </button>
           <button
-            class="py-2 px-4 font-medium text-gray-600 border-b-2 border-transparent focus:outline-none"
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
             data-tab="tab4"
             onclick="showTab('tab4')"
           >
-            ANTES DE EMPEZAR
+            Antes de empezar
           </button>
         </div>
 
@@ -657,26 +666,28 @@
 
     <!-- Contacto -->
 
-    <section class="bg-cover bg-center bg-no-repeat text-white px-20 py-32" style="background-image: url('./assets/contact-background.png');" id="contact">
+    <section class="bg-cover bg-center bg-no-repeat text-white py-10 px-6 lg:px-20 lg:py-32" style="background-image: url('./assets/contact-background.png');" id="contact">
       <div class="flex justify-center mb-6 text-center">
-        <h3 class="w-4/6 text-7xl">¿QUÉ ESPERAS PARA <span class="font-bold">REMODELAR TU DEPA?</span></h3>
+        <h3 class="lg:w-4/6 text-4xl lg:text-7xl">¿QUÉ ESPERAS PARA <span class="font-bold">REMODELAR TU DEPA?</span></h3>
       </div>
-      <div class="flex justify-center mb-6 font-light">
+      <div class="flex justify-center mb-6 font-light text-center">
         <p>Agenda una videollamada sin costo y cuéntanos cómo imaginas tu depa.</p>
       </div>
-      <div class="flex justify-center gap-4">
+      <div class="flex flex-col lg:flex-row text-center justify-center gap-4">
         <a href="" class="bg-white text-black rounded-lg py-1.5 px-6 text-lg">Agendar una videollamada</a>
-        <a href="" class="rounded-lg py-1.5 px-6 text-lg border border-white">Escríbenos por WhatsApp</a>
+        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="rounded-lg py-1.5 px-6 text-lg border border-white">
+          Escríbenos por WhatsApp
+        </a>
       </div>
     </section>
     
     <!-- Footer -->
-    <footer class="py-6 px-32 bg-[#294038] text-white font-light">
-      <div class="flex items-center justify-between w-full py-10">
+    <footer class="p-4 lg:py-6 lg:px-32 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
         <div>
           <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
         </div>
-        <div class="flex gap-4 text-lg">
+        <div class="flex gap-4 lg:text-lg">
           <a href="#" class="italic">Contacto</a>
           <i>→</i>
           <a href="#" class="italic">Instagram</a>
@@ -733,12 +744,12 @@
 
         // Update active tab styling
         document.querySelectorAll('[data-tab]').forEach(button => {
-            button.classList.remove('bg-black', 'text-white', 'rounded-md');
-            button.classList.add('border-transparent', 'text-gray-600');
+            button.classList.remove('bg-black', 'text-white');
+            button.classList.add('text-gray-600');
         });
         const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
-        activeButton.classList.remove('border-transparent', 'text-gray-600');
-        activeButton.classList.add('bg-black', 'text-white', 'rounded-md');
+        activeButton.classList.remove('text-gray-600');
+        activeButton.classList.add('bg-black', 'text-white');
       }
 
       // Show the first tab by default on page load
