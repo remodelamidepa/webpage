@@ -79,6 +79,10 @@ html {
   overflow: hidden;
   transition-duration: 300ms;
   transition-timing-function: linear;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .acc-item {
