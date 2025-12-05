@@ -26,13 +26,73 @@
  </head>
   <body class="">
     <!-- Header -->
-    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-20 py-10">
+    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-10">
       <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
         <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
       </a>
-      <div class="flex justify-end items-center text-lg gap-4 lg:gap-16">
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
         <a href="projects.html" class="text-gray-800 hover:text-teal-700">Proyectos</a>
         <a href="#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-black transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-black transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-black transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+      
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-4 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="/">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-4 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyectos
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+      
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-8 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <!-- <a class="hover:opacity-80" href="#privacidad">Aviso de privacidad</a>
+            <i>→</i> -->
+          </div>
+        </nav>
       </div>
     </header>
     <!-- Hero Section -->
@@ -225,28 +285,34 @@
     </section>
 
     <!-- Crecer en familia -->
-    <section class="grid grid-cols-2 gap-8 px-0 lg:px-20 pb-10 lg:py-20" id="grow-as-family">
-      <div class="col-span-2 lg:col-span-1 px-6 lg:px-0">
-        <div class="flex flex-col lg:flex-row justify-between mb-16">
-          <h3 class="text-3xl">UN DEPA PENSADO PARA <br> CRECER EN FAMILIA</h3>
-          <p class="text-3xl order-first lg:order-last">03/</p>
+    <section class="grid grid-cols-2 pb-20 lg:pb-0" id="grow-as-family">
+      <div class="col-span-2 lg:col-span-1 px-6 lg:px-10 py-20 flex items-center">
+        <div>
+          <div class="flex flex-col lg:flex-row justify-between mb-8 lg:mb-16">
+            <h3 class="text-3xl">UN DEPA PENSADO PARA <br> CRECER EN FAMILIA</h3>
+            <p class="text-3xl order-first lg:order-last">03/</p>
+          </div>
+          <div class="lg:w-5/6 font-light">
+            <p class="mb-6 lg:mb-0">
+              En este proyecto ayudamos a una familia joven con dos hijos a 
+              transformar su depa en un espacio funcional, acogedor y ordenado. 
+            </p>
+            <p>
+              Cada rincón fue diseñado con intención: más almacenaje, muebles 
+              a medida, y un rooftop renovado para disfrutar juntos. 
+            </p>
+          </div>
+          <a href="/" class="bg-black text-white rounded-md inline-block mt-6 py-3 px-10 text-xl text-center w-full lg:w-auto">
+            Ver proyecto
+          </a>
         </div>
-        <p class="my-8 lg:w-5/6">
-          En este proyecto ayudamos a una familia joven con dos hijos a 
-          transformar su depa en un espacio funcional, acogedor y ordenado. 
-          Cada rincón fue diseñado con intención: más almacenaje, muebles 
-          a medida, y un rooftop renovado para disfrutar juntos. 
-        </p>
-        <a href="/" class="bg-black text-white rounded-md inline-block mt-6 py-3 px-10 text-xl text-center w-full lg:w-auto">
-          Ver proyecto
-        </a>
       </div>
-      <div class="order-first lg:order-last col-span-2 lg:col-span-1">
-        <img src="./assets/build-image.png" alt="Imagen de construcción">
+      <div class="order-first lg:order-last col-span-2 lg:col-span-1 w-full">
+        <img src="./assets/build-image.png" class="w-full object-cover h-full" alt="Imagen de construcción">
       </div>
     </section>
     <!-- Testimonios -->
-    <section class="px-6 py-10 lg:py-20 lg:px-20 bg-[#F4F4F4] text-lg" id="testimonials">
+    <section class="px-6 py-20 lg:py-20 lg:px-20 bg-[#F4F4F4] text-lg" id="testimonials">
       <div class="flex flex-col lg:flex-row justify-between">
         <h3 class="text-3xl">TESTIMONIOS</h3>
         <p class="text-3xl order-first lg:order-last">04/</p> 
@@ -270,7 +336,7 @@
       </div>
     </section>
       <!-- Conoce al equipo -->
-    <section class="py-10 px-6 lg:px-20 lg:py-20 text-lg" id="team">
+    <!-- <section class="py-10 px-6 lg:px-20 lg:py-20 text-lg" id="team">
       <div class="flex flex-col lg:flex-row justify-between">
         <p class="text-3xl">05/</p> 
         <div class="flex flex-col items-start lg:items-end">
@@ -278,7 +344,7 @@
           <p class="lg:text-right lg:w-[450px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
         </div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
+      <div class="flex justify-center lg:justify-start flex-wrap gap-8 mt-16">
         <article class="flex flex-col items-start gap-4">
           <img src="./assets/team-profile-1.png" alt="Foto de perfil de miembro del equipo">
           <div>
@@ -301,16 +367,16 @@
           </div>
         </article>
       </div>
-    </section>
+    </section> -->
 
     <!-- FAQ -->
-    <section id="faq" class="py-10 px-6 lg:px-20 lg:py-32 bg-[#F4F4F4] text-lg">
-      <div class="flex justify-between mb-10">
+    <section id="faq" class="py-20 px-6 lg:px-20 lg:py-32 bg-white text-lg"> <!-- TODO: Change bg color "Conoce al equipo" section is active -->
+      <div class="flex lg:flex-row flex-col justify-between mb-10">
         <div class="max-w-lg">
           <h3 class="text-3xl mb-4">PREGUNTAS FRECUENTES</h3>
           <p class="font-light">Y que seguro te ayudarán a entender mejor cómo trabajamos.</p>
         </div>
-        <p class="text-3xl">06/</p> 
+        <p class="text-3xl order-first lg:order-last">06/</p> 
       </div>
       <div class="w-full mx-auto text-sm lg:text-lg">
         <div class="flex flex-wrap lg:justify-between gap-2 mb-4 lg:mb-0">
@@ -344,7 +410,7 @@
           </button>
         </div>
 
-        <div id="tab-content" class="py-2 bg-[#F4F4F4] w-full">
+        <div id="tab-content" class="py-2 bg-white w-full"> <!-- TODO:Change bg color "Conoce al equipo" section is active -->
           <div id="tab1" class="tab-pane hidden">
             <div id="accordion">
               <div class="acc-item close">
@@ -666,7 +732,7 @@
 
     <!-- Contacto -->
 
-    <section class="bg-cover bg-center bg-no-repeat text-white py-10 px-6 lg:px-20 lg:py-32" style="background-image: url('./assets/contact-background.png');" id="contact">
+    <section class="bg-cover bg-center bg-no-repeat text-white py-20 px-6 lg:px-20 lg:py-32" style="background-image: url('./assets/contact-background.png');" id="contact">
       <div class="flex justify-center mb-6 text-center">
         <h3 class="lg:w-4/6 text-4xl lg:text-7xl">¿QUÉ ESPERAS PARA <span class="font-bold">REMODELAR TU DEPA?</span></h3>
       </div>
@@ -686,16 +752,16 @@
     <!-- Footer -->
     <footer class="p-4 lg:py-6 lg:px-32 bg-[#294038] text-white font-light">
       <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
-        <div>
+        <a href="/">
           <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
-        </div>
+        </a>
         <div class="flex gap-4 lg:text-lg">
-          <a href="#" class="italic">Contacto</a>
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
           <i>→</i>
-          <a href="#" class="italic">Instagram</a>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
           <i>→</i>
-          <a href="#" class="italic">Aviso de privacidad</a>
-          <i>→</i>
+          <!-- <a href="#" class="italic">Aviso de privacidad</a>
+          <i>→</i> -->
         </div>
       </div>
       <hr class="border-white">

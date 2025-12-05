@@ -72,7 +72,7 @@ html {
 
 .acc-body {
   max-width: 70%;
-  background-color: rgb(245, 245, 244);
+  /* background-color: rgb(245, 245, 244); */ /* TODO: uncomment this line when "Conoce al equipo" section is active */
   /* padding: 0 1.25rem; */
   font-size: 0.875rem;
   font-weight: 300;

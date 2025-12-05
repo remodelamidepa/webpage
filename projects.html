@@ -26,13 +26,74 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-20 py-10">
+    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-10">
       <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
         <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
       </a>
-      <div class="flex justify-end items-center text-lg gap-4 lg:gap-16">
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
         <a href="projects.html" class="text-gray-800 hover:text-teal-700">Proyectos</a>
         <a href="#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-black transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-black transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-black transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+      
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-4 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="/">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-4 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyectos
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+      
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-8 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <!-- <a class="hover:opacity-80" href="#privacidad">Aviso de privacidad →</a> -->
+            <i>→</i>
+
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -40,11 +101,11 @@
     <section class="py-20 px-6 mx-auto" id="hero">
       <div class="mb-12 lg:px-20">
         <h1 class="hero-title mb-6">UN DEPA PENSADO <br> PARA CRECER EN FAMILIA</h1>
-        <h2 class="w-full lg:w-5/12 mb-4 lg:mb-0 font-light">
+        <h2 class="w-full md:w-8/12 lg:w-5/12 mb-4 lg:mb-0 font-light">
           En este proyecto ayudamos a una familia joven con dos hijos a
           transformar su depa en un espacio funcional, acogedor y ordenado.
         </h2>
-        <h2 class="w-full lg:w-5/12 font-light">
+        <h2 class="w-full md:w-8/12 lg:w-5/12 font-light">
           Cada rincón fue diseñado con intención: más almacenaje, muebles 
           a medida, y un rooftop renovado para disfrutar juntos.
         </h2>
@@ -130,16 +191,16 @@
     <!-- Footer -->
     <footer class="p-4 lg:py-6 lg:px-32 bg-[#294038] text-white font-light">
       <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
-        <div>
+        <a href="/">
           <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
-        </div>
+        </a>
         <div class="flex gap-4 lg:text-lg">
-          <a href="#" class="italic">Contacto</a>
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
           <i>→</i>
-          <a href="#" class="italic">Instagram</a>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
           <i>→</i>
-          <a href="#" class="italic">Aviso de privacidad</a>
-          <i>→</i>
+          <!-- <a href="#" class="italic">Aviso de privacidad</a>
+          <i>→</i> -->
         </div>
       </div>
       <hr class="border-white">
