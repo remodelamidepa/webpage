@@ -9,8 +9,9 @@
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-
+  <link rel="stylesheet" href="./main.css" />
   <script>
     window.LINKDRIP_PIXEL_ID = '8-6QbPtQV3DGgfx-n9xmA';
     (function () {
@@ -23,250 +24,823 @@
   </script>
 
  </head>
- <body class="font-roboto">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-lg">
-   <div class="max-w-6xl mx-auto px-4">
-    <div class="flex justify-between">
-     <div class="flex space-x-7">
-      <div>
-       <a class="flex items-center py-4 px-2" href="#">
-        <img alt="Logo de RemodelaMiDepa" class="h-8 w-8 mr-2" height="32" src="./assets/logo-rmd.png" width="32"/>
-        <span class="font-semibold text-gray-500 text-lg">
-          RemodelaMiDepa
-        </span>
-       </a>
-      </div>
-      <div class="hidden md:flex items-center space-x-1">
-       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300" href="#hero">
-        Inicio
-       </a>
-       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300" href="#about">
-        ¿Quiénes somos?
-       </a>
-       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300" href="#services">
-        Servicios
-       </a>
-       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300" href="#project">
-        Proyecto destacado
-       </a>
-       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300" href="#benefits">
-        Beneficios
-       </a>
-       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-600 transition duration-300" href="#contact">
-        Cotizar
-       </a>
-      </div>
-     </div>
-     <div class="md:hidden flex items-center">
-      <button class="outline-none mobile-menu-button ">
-       <svg class="w-6 h-6 text-gray-500 hover:text-blue-600" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 6h16M4 12h16M4 18h16">
-        </path>
-       </svg>
-      </button>
-     </div>
-    </div>
-   </div>
-   <div class="hidden mobile-menu">
-    <ul class="">
-     <li class="active">
-      <a class="block text-sm px-2 py-4 text-white bg-blue-600 font-semibold" href="#hero">
-       Inicio
-      </a>
-     </li>
-     <li>
-      <a class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300" href="#about">
-       ¿Quiénes somos?
-      </a>
-     </li>
-     <li>
-      <a class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300" href="#services">
-       Servicios
-      </a>
-     </li>
-     <li>
-      <a class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300" href="#project">
-       Proyecto destacado
-      </a>
-     </li>
-     <li>
-      <a class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300" href="#benefits">
-       Beneficios
-      </a>
-     </li>
-     <li>
-      <a class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300" href="#contact">
-       Cotizar
-      </a>
-     </li>
-    </ul>
-   </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="relative bg-gray-800 text-white" id="hero">
-   <img alt="Imagen destacada de un espacio diseñado con muebles modernos y una decoración elegante" class="w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/fejI1fukIzZlVpelz1f5hhHr6MMdkSjpFAdiZdnKGgB5DgXfE.jpg" width="1920"/>
-   <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-    <h1 class="text-4xl md:text-6xl font-bold text-gray-200">
-     Transformamos tu departamento en el espacio de tus sueños
-    </h1>
-    <p class="mt-4 text-lg md:text-2xl text-gray-200">
-     Diseño de interiores personalizado, desde la propuesta hasta la implementación.
-    </p>
-    <a class="mt-6 px-8 py-3 bg-teal-700 text-white rounded-full text-lg md:text-xl" href="https://link.remodelamidepa.com/Wl0On">
-     Agendar una asesoría gratuita
+  <body class="">
+    <!-- Whatsapp widget -->
+    <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="fixed bottom-6 right-6 z-10">
+      <img src="./assets/whatsapp-icon.png" alt="Ícono de WhatsApp" class="h-16 w-16">
     </a>
-   </div>
-  </section>
-  <!-- ¿Quiénes somos? -->
-  <section class="py-12 bg-white text-gray-800" id="about">
-   <div class="container mx-auto px-6 md:px-12 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold">
-     ¿Quiénes somos?
-    </h2>
-    <p class="mt-4 text-lg md:text-xl">
-      Somos un estudio de arquitectura y diseño de interiores que se especializa en crear espacios funcionales y estéticamente impecables que se adapten a tus necesidades y estilo de vida.
-    </p>
-   </div>
-  </section>
-  <!-- Servicios -->
-  <section class="py-12 bg-gray-100 text-gray-800" id="services">
-   <div class="container mx-auto px-6 md:px-12">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">
-     Servicios
-    </h2>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-     <div class="p-6 bg-white rounded-lg shadow-lg text-center">
-      <i class="fas fa-pencil-ruler text-4xl text-teal-700">
-      </i>
-      <h3 class="mt-4 text-2xl font-bold">
-       Diseño completo
-      </h3>
-      <p class="mt-2 text-lg">
-       Desde la propuesta arquitectónica hasta los detalles finales.
-      </p>
-     </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg text-center">
-      <i class="fas fa-laptop text-4xl text-teal-700">
-      </i>
-      <h3 class="mt-4 text-2xl font-bold">
-       Visualización realista con renders
-      </h3>
-      <p class="mt-2 text-lg">
-       Para que veas el resultado antes de implementarlo.
-      </p>
-     </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg text-center">
-      <i class="fas fa-couch text-4xl text-teal-700">
-      </i>
-      <h3 class="mt-4 text-2xl font-bold">
-       Implementación integral
-      </h3>
-      <p class="mt-2 text-lg">
-       Compra de mobiliario o fabricación personalizada.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Proyecto destacado -->
-  <section class="py-12 bg-white text-gray-800" id="project">
-   <div class="container mx-auto px-6 md:px-12">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">
-     Proyecto destacado
-    </h2>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-     <div>
-      <img alt="Imagen del proyecto destacado mostrando una sala de estar moderna con muebles elegantes y decoración minimalista" class="w-full rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/8foz6gdQQ30mUC85wm8iFRdRoRodZ1p2cqxUzAInEaehA86TA.jpg" width="600"/>
-     </div>
-     <div class="flex flex-col justify-center">
-      <h3 class="text-2xl font-bold">
-       Reto
-      </h3>
-      <p class="mt-2 text-lg">
-       El cliente necesitaba transformar un espacio pequeño en un lugar funcional y estéticamente agradable.
-      </p>
-      <h3 class="mt-4 text-2xl font-bold">
-       Solución
-      </h3>
-      <p class="mt-2 text-lg">
-       Diseñamos un espacio que maximiza el uso del área disponible, utilizando muebles multifuncionales y una paleta de colores clara.
-      </p>
-      <h3 class="mt-4 text-2xl font-bold">
-       Resultado
-      </h3>
-      <p class="mt-2 text-lg">
-       El resultado fue un departamento que combina funcionalidad y estética, superando las expectativas del cliente.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Beneficios -->
-  <section class="py-12 bg-gray-100 text-gray-800" id="benefits">
-   <div class="container mx-auto px-6 md:px-12 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold">
-     Beneficios
-    </h2>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-     <div class="p-6 bg-white rounded-lg shadow-lg">
-      <i class="fas fa-check-circle text-4xl text-teal-700">
-      </i>
-      <h3 class="mt-4 text-2xl font-bold">
-       Diseño personalizado
-      </h3>
-      <p class="mt-2 text-lg">
-       Adaptado a tus necesidades.
-      </p>
-     </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
-      <i class="fas fa-check-circle text-4xl text-teal-700">
-      </i>
-      <h3 class="mt-4 text-2xl font-bold">
-       Proceso transparente
-      </h3>
-      <p class="mt-2 text-lg">
-       Y sin complicaciones.
-      </p>
-     </div>
-     <div class="p-6 bg-white rounded-lg shadow-lg">
-      <i class="fas fa-check-circle text-4xl text-teal-700">
-      </i>
-      <h3 class="mt-4 text-2xl font-bold">
-       Resultados estéticos
-      </h3>
-      <p class="mt-2 text-lg">
-       Que combinan funcionalidad y estética.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Invitación a Cotizar -->
-  <section class="py-12 bg-white text-gray-800" id="contact">
-   <div class="container mx-auto px-6 md:px-12">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">
-      ¿Quieres saber cuando cuesta remodelar tu departamento?
-    </h2>
-    <p class="mt-4 text-lg md:text-xl text-center">
-      Cuéntanos que estás buscando y agendaremos una asesoría gratuita.
-    </p>
-    <div class="mt-8 max-w-lg mx-auto">
+    <!-- Header -->
+    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-10">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+        <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+      </a>
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
+        <a href="projects.html" class="text-gray-800 hover:text-teal-700">Proyectos</a>
+        <a href="#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-black transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-black transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-black transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+      
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="/">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyectos
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+      
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-12 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <!-- <a class="hover:opacity-80" href="#privacidad">Aviso de privacidad</a>
+            <i>→</i> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="py-20 mx-auto px-6 lg:px-0" id="hero">
+      <div class="mb-6 lg:mb-12 flex justify-center flex-col lg:flex-row">
+        <h1 class="hero-title mb-6">
+          <span class="font-light">TU ESPACIO SOÑADO,</span> <br />
+          <span class="lg:ml-14">SIN QUE TENGAS QUE MOVER</span> <br />
+          <span class="flex items-center">
+            <span class="mr-4">
+              UN DEDO
+            </span>
+            <span class="text-[18px] leading-tight hidden lg:block">
+              Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. <br> Tu solo entras y disfrutas.
+            </span>
+          </span>
+        </h1>
+        <p class="block lg:hidden font-light">
+          Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. Tu solo entras y disfrutas.
+        </p>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center gap-3 text-lg">
+        <!-- <a href="#contact" class="py-2 px-4 text-center bg-black text-white rounded-lg">
+          Agendar videollamada
+        </a> -->
+        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="border border-black text-center py-2 px-4 text-black rounded-lg">
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+    <!-- Galería -->
+    <section class="h-[400px] lg:h-[500px]" id="about">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/swiper-1.png" alt="Imagen de la galería" height="100px">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/project-image-2.png" alt="Imagen de la galería" height="100px">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/project-image-3.png" alt="Imagen de la galería" height="100px">
+          </div>
+        </div>
+        <div class="swiper-pagination color-black text-black "></div>
+      </div>
+    </section>
+    <!-- Por qué confiar -->
+    <section class="py-20 px-6 lg:px-20" id="why-trust">
+      <div class="flex flex-col lg:flex-row items-start lg:justify-between mb-16">
+        <p class="text-3xl mb-4 lg:mb-0">01/</p>
+        <div class="flex flex-col items-start lg:items-end">
+          <h2 class="text-3xl mb-4">¿POR QUÉ CONFIAR EN <br> REMODELA MI DEPA?</h2>
+          <p class="lg:w-[450px] lg:text-right">Porque te acompañamos en cada paso y nos encargamos de todo para que tú disfrutes el resultado sin estrés.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <article class="bg-[#F4F4F4] p-6">
+          <img src="./assets/image-1.svg" alt="Icono de diseño personalizado" class="mb-20">
+          <h3 class="font-semibold mb-4 text-lg">NOS ENCARGAMOS DE TODO</h3>
+          <P class="leading-tight">
+            Desde el diseño hasta la 
+            entrega final. No tienes que 
+            coordinar proveedores ni 
+            preocuparte por nada.
+          </P>
+        </article>
+        <article class="bg-[#F4F4F4] p-6">
+          <img src="./assets/image-2.svg" alt="Icono de diseño personalizado" class="mb-20">
+          <h3 class="font-semibold mb-4 text-lg">DISEÑO A TU MEDIDA</h3>
+          <P class="leading-tight">
+            Adaptamos cada espacio 
+            a tu estilo de vida, gustos y 
+            necesidades.
+          </P>
+        </article>
+        <article class="bg-[#F4F4F4] p-6">
+          <img src="./assets/image-3.svg" alt="Icono de diseño personalizado" class="mb-20">
+          <h3 class="font-semibold mb-4 text-lg">BIEN PLANEADO, BIEN EJECUTADO</h3>
+          <P class="leading-tight">
+            Sabemos que pueden 
+            surgir imprevistos, por eso 
+            trabajamos con orden y 
+            buena comunicación.
+          </P>
+        </article>
+        <article class="bg-[#F4F4F4] p-6">
+          <img src="./assets/image-4.svg" alt="Icono de diseño personalizado" class="mb-20">
+          <h3 class="font-semibold mb-4 text-lg">CUIDAMOS CADA DETALLE</h3>
+          <P class="leading-tight">
+            Seleccionamos materiales, 
+            mobiliario y acabados con 
+            el mismo cuidado con el 
+            que lo haríamos en nuestra 
+            casa.
+          </P>
+        </article>
+        <article class="bg-[#F4F4F4] p-6">
+          <img src="./assets/image-5.svg" alt="Icono de diseño personalizado" class="mb-20">
+          <h3 class="font-semibold mb-4 text-lg">FLEXIBLE DESDE EL INICIO</h3>
+          <P class="leading-tight">
+            Podemos trabajar a 
+            distancia durante la etapa 
+            de diseño si aún no te 
+            entregan tu depa o casa.
+          </P>
+        </article>
+      </div>
+    </section>
 
-      <iframe data-tally-src="https://tally.so/embed/mJ8EMK?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="476" frameborder="0" marginheight="0" marginwidth="0" title="
-      "></iframe>
-      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    <!-- Así trabajamos -->
+    <section class="py-20 px-6 lg:px-20 bg-[#294038] text-white" id="how-we-work">
+      <div class="flex flex-col lg:flex-row items-start justify-between mb-16">
+        <div class="flex flex-col">
+          <h2 class="text-3xl mb-4">ASÍ TRABAJAMOS</h2>
+          <p class="lg:w-[450px]">Porque te acompañamos en cada paso y nos encargamos de todo para que tú disfrutes el resultado sin estrés.</p>
+        </div>
+        <p class="text-3xl order-first lg:order-last mb-4 lg:mb-0">02/</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <article class="border border-white p-6 rounded-xl min-h-[260px]">
+          <div class="flex justify-between mb-10">
+            <p class="text-3xl">01</p>
+            <img src="./assets/image-6.svg" alt="">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">PRIMER CONTACTO</h3>
+            <p class="leading-tight">
+              Nos cuentas lo que quieres lograr, 
+              te explicamos cómo trabajamos y 
+              resolvemos tus dudas.
+            </p>
+          </div>
+        </article>
+        <article class="border border-white p-6 rounded-xl min-h-[260px]">
+          <div class="flex justify-between mb-10">
+            <p class="text-3xl">02</p>
+            <img src="./assets/image-7.svg" alt="">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">COTIZACIÓN CLARA Y POR ETAPAS</h3>
+            <p class="leading-tight">
+              Primero te entregamos la cotización del proyecto 
+              de diseño. Cuando se aprueba, elaboramos una 
+              cotización detallada para la obra y ejecución.
+            </p>
+          </div>
+        </article>
+        <article class="border border-white p-6 rounded-xl min-h-[260px]">
+          <div class="flex justify-between mb-10">
+            <p class="text-3xl">03</p>
+            <img src="./assets/image-8.svg" alt="">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">DISEÑO A LA MEDIDA</h3>
+            <p class="leading-tight">
+              Creamos una propuesta con distribución, estilo, 
+              materiales y mobiliario pensados específicamente 
+              para tu espacio y tus necesidades.
+            </p>
+          </div>
+        </article>
+        <article class="border border-white p-6 rounded-xl min-h-[260px]">
+          <div class="flex justify-between mb-10">
+            <p class="text-3xl">04</p>
+            <img src="./assets/image-9.svg" alt="">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">EJECUCIÓN INTEGRAL</h3>
+            <p class="leading-tight">
+              Coordinamos todo: obra, proveedores, 
+              mobiliario, acabados y supervisión. 
+            </p>
+          </div>
+        </article>
+        <article class="border border-white p-6 rounded-xl min-h-[260px]">
+          <div class="flex justify-between mb-10">
+            <p class="text-3xl">05</p>
+            <img src="./assets/image-10.svg" alt="">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">ENTREGA FINAL</h3>
+            <p class="leading-tight">
+              Te entregamos tu nuevo depa o casa lista para 
+              habitar. Todo en orden, tal como lo imaginaste.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    </div>
-   </div>
-  </section>
-  <script>
-   const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
+    <!-- Crecer en familia -->
+    <section class="grid grid-cols-2 pb-20 lg:pb-0" id="grow-as-family">
+      <div class="col-span-2 lg:col-span-1 px-6 lg:pr-10 lg:pl-20 py-20 flex items-center">
+        <div>
+          <div class="flex flex-col lg:flex-row justify-between  lg:mb-16">
+            <h3 class="text-3xl">UN DEPA PENSADO PARA <br> CRECER EN FAMILIA</h3>
+            <p class="text-3xl order-first lg:order-last mb-4 lg:mb-0">03/</p>
+          </div>
+          <div class="lg:w-5/6 font-light">
+            <p class="mb-6 lg:mb-0">
+              En este proyecto ayudamos a una familia joven con dos hijos a 
+              transformar su depa en un espacio funcional, acogedor y ordenado. 
+            </p>
+            <p>
+              Cada rincón fue diseñado con intención: más almacenaje, muebles 
+              a medida, y un rooftop renovado para disfrutar juntos. 
+            </p>
+          </div>
+          <a href="projects.html" class="bg-black text-white rounded-md inline-block mt-6 py-3 px-10 text-xl text-center w-full lg:w-auto">
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+      <div class="order-first lg:order-last col-span-2 lg:col-span-1 w-full">
+        <img src="./assets/build-image.png" class="w-full object-cover h-full" alt="Imagen de construcción">
+      </div>
+    </section>
+    <!-- Testimonios -->
+    <section class="px-6 py-20 lg:py-20 lg:px-20 bg-[#F4F4F4] text-lg" id="testimonials">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <h3 class="text-3xl">TESTIMONIOS</h3>
+        <p class="text-3xl order-first lg:order-last mb-4 lg:mb-0">04/</p> 
+      </div>
+      <div class="bg-white max-w-4xl mx-auto p-10 mt-16 rounded-3xl shadow-md">
+        <div class="mb-8">
+          <img src="./assets/stars.svg" alt="Calificación de 5 estrellas">
+        </div>
+        <div class="italic">
+          <p>“Lo que más necesitábamos era orden y funcionalidad, y eso fue exactamente lo que nos dieron.</p>
+          <p>Los muebles a medida hicieron toda la diferencia, y el rooftop quedó espectacular.</p>
+          <br>
+          <p>Lo mejor fue que no tuvimos que estar pendientes de nada: todo avanzó con orden y claridad.”</p>
+        </div>
+        <div class="flex items-center gap-6 mt-10">
+          <div class="rounded-full overflow-hidden">
+            <img src="./assets/avatar.png" alt="Avatar de cliente">
+          </div>
+          <p class="font-bold">SOFÍA Y CARLOS</p>
+        </div>
+      </div>
+    </section>
+      <!-- Conoce al equipo -->
+    <!-- <section class="py-10 px-6 lg:px-20 lg:py-20 text-lg" id="team">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <p class="text-3xl mb-4 lg:mb-0">05/</p> 
+        <div class="flex flex-col items-start lg:items-end">
+          <h3 class="text-3xl mb-4">CONOCE AL EQUIPO</h3>
+          <p class="lg:text-right lg:w-[450px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-start flex-wrap gap-8 mt-16">
+        <article class="flex flex-col items-start gap-4">
+          <img src="./assets/team-profile-1.png" alt="Foto de perfil de miembro del equipo">
+          <div>
+            <h4 class="font-bold">NOMBRE COMPLETO</h4>
+            <P>Lorem ipsum dolor sit amet.</P>
+          </div>
+        </article>
+        <article class="flex flex-col items-start gap-4">
+          <img src="./assets/team-profile-2.png" alt="Foto de perfil de miembro del equipo">
+          <div>
+            <h4 class="font-bold">NOMBRE COMPLETO</h4>
+            <P>Lorem ipsum dolor sit amet.</P>
+          </div>
+        </article>
+        <article class="flex flex-col items-start gap-4">
+          <img src="./assets/team-profile-3.png" alt="Foto de perfil de miembro del equipo">
+          <div>
+            <h4 class="font-bold">NOMBRE COMPLETO</h4>
+            <P>Lorem ipsum dolor sit amet.</P>
+          </div>
+        </article>
+      </div>
+    </section> -->
 
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-    });
-  </script>
- </body>
+    <!-- FAQ -->
+    <section id="faq" class="py-20 px-6 lg:px-20 lg:py-32 bg-white text-lg"> <!-- TODO: Change bg color "Conoce al equipo" section is active -->
+      <div class="flex lg:flex-row flex-col justify-between mb-10">
+        <div class="max-w-lg">
+          <h3 class="text-3xl mb-4">PREGUNTAS FRECUENTES</h3>
+          <p class="font-light">Y que seguro te ayudarán a entender mejor cómo trabajamos.</p>
+        </div>
+        <p class="text-3xl order-first lg:order-last mb-4 lg:mb-0">05/</p> <!-- TODO: Change enum --> 
+      </div>
+      <div class="w-full mx-auto text-sm lg:text-lg">
+        <div class="flex flex-wrap lg:justify-between gap-2 mb-4 lg:mb-0">
+          <button
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
+            data-tab="tab1"
+            onclick="showTab('tab1')"
+          >
+            Lo que incluye el servicio
+          </button>
+          <button
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
+            data-tab="tab2"
+            onclick="showTab('tab2')"
+          >
+            Dónde y cómo trabajamos
+          </button>
+          <button
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
+            data-tab="tab3"
+            onclick="showTab('tab3')"
+          >
+            Tiempos y costos
+          </button>
+          <button
+            class="py-2 px-4 font-medium text-gray-600 rounded-[5px] border border-gray-300 lg:border-transparent lg:uppercase focus:outline-none"
+            data-tab="tab4"
+            onclick="showTab('tab4')"
+          >
+            Antes de empezar
+          </button>
+        </div>
+
+        <div id="tab-content" class="py-2 bg-white w-full"> <!-- TODO:Change bg color "Conoce al equipo" section is active -->
+          <div id="tab1" class="tab-pane hidden">
+            <div id="accordion">
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Qué incluye el proyecto de diseño interior?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Incluye todo lo necesario para definir cómo se va a ver y cómo va a funcionar tu nuevo depa o casa: propuesta de distribución, estilo, selección de materiales y diseño de mobiliario a medida. 
+                    También entregamos los planos necesarios para ejecutar la obra. 
+                    Si lo necesitas, podemos incluir renders para ayudarte a visualizar el resultado con mayor claridad. 
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Necesito un proyecto de diseño obligatoriamente?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Sí. Toda remodelación que hacemos parte de un proyecto de diseño. 
+                    Esto nos permite definir bien cada detalle — distribución, estilo, materiales, mobiliario, tiempos y costos — antes de comenzar la obra. 
+                    Evita cambios de último minuto, errores costosos y asegura un mejor resultado. 
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Puedo contratar solo el diseño, sin la obra?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Sí. Aunque muchos clientes nos eligen para encargarnos de todo,
+                    también puedes contratar únicamente el proyecto de diseño y ejecutarlo por tu cuenta. 
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Hacen trabajos de mantenimiento como pintar o impermeabilizar?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    No ofrecemos mantenimiento por separado. 
+                    Si ya trabajaste con nosotros y necesitas mantenimiento en tu espacio, escríbenos directamente. Siempre buscamos acompañar a nuestros clientes más allá del proyecto inicial.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>Vivo en un depa rentado, ¿puedo hacer un proyecto con ustedes?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Trabajamos principalmente en proyectos donde se puede transformar el espacio de forma integral — cambiando distribución, materiales, muebles a medida, etc. 
+                    Por eso, si el depa es rentado y no permite muchas modificaciones, es posible que no sea el mejor momento para trabajar juntos. 
+                    Pero si estás buscando una renovación a fondo y tienes libertad para hacer cambios, escríbenos y lo evaluamos contigo 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="tab-pane hidden">
+            <div id="accordion">
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Se puede remodelar solo una parte de mi casa o depa? </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Sí. Podemos trabajar en espacios individuales como la cocina, un baño, una recámara, una sala, un rooftop, un patio… 
+                    Lo importante es que el proyecto tenga un enfoque completo dentro de ese espacio: distribución, acabados, materiales y, si hace falta, mobiliario a la medida. 
+                    Más que cambios aislados, buscamos transformar el espacio para que realmente se sienta y funcione mejor.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿También remodelan casas? </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Sí. Nuestro servicio está pensado para quienes quieren transformar
+                    su hogar con diseño, planeación y ejecución profesional. 
+                    No importa si es un depa, una casa o un loft.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Trabajan solo en la Ciudad de México?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Principalmente sí, pero si estás en una zona cercana y tienes un proyecto
+                    que requiera diseño, planeación y ejecución profesional, también podrías
+                    contar con nosotros. Lo importante es que busques un servicio integral,
+                    con diseño de calidad y una ejecución con atención al detalle.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab3" class="tab-pane hidden">
+            <div id="accordion">
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Cuánto cuesta el proyecto de diseño interior?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Depende del tamaño del espacio, cuántas áreas se van a intervenir y el nivel de detalle que se busca. 
+                    Cada proyecto es distinto, por eso cotizamos de forma personalizada según tus necesidades. 
+
+                    Ofrecemos un servicio pensado para quienes quieren transformar su espacio con un diseño bien planeado y una ejecución cuidada. 
+                    Si quieres saber cuánto podría costar tu proyecto, escríbenos por WhatsApp.
+                  </p>
+                </div>
+              </div>
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Cuánto tiempo toma el proyecto completo?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    Cada proyecto es diferente, pero en promedio: 
+                    El diseño puede tomar de 3 a 6 semanas. 
+                    La ejecución de obra y entrega, de 6 a 10 semanas. 
+                    Desde el inicio te compartimos un cronograma claro, para que tengas visibilidad de todo el proceso y sepas qué esperar en cada etapa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab4" class="tab-pane hidden">
+            <div id="accordion">
+              <div class="acc-item close">
+                <div class="acc-header">
+                  <p>¿Qué pasa después del diagnóstico inicial? ¿Ya me entregan ideas o propuestas?</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="acc-body">
+                  <p>
+                    No. El objetivo del diagnóstico inicial es entender bien tu espacio, tus necesidades y lo que quieres lograr. 
+                    Con eso, preparamos una cotización clara y detallada para el proyecto de diseño interior. 
+                    Una vez contratado el diseño, desarrollamos las propuestas de distribución, estilo, materiales y mobiliario con todo el detalle que tu espacio necesita.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+
+    <section class="bg-cover bg-center bg-no-repeat text-white py-20 px-6 lg:px-20 lg:py-32" style="background-image: url('./assets/contact-background.png');" id="contact">
+      <div class="flex justify-center mb-6 text-center">
+        <h3 class="lg:w-4/6 text-4xl lg:text-7xl">¿QUÉ ESPERAS PARA <span class="font-bold">REMODELAR TU DEPA?</span></h3>
+      </div>
+      <div class="flex justify-center mb-6 font-light text-center">
+        <p>Agenda una videollamada sin costo y cuéntanos cómo imaginas tu depa.</p>
+      </div>
+      <div class="flex flex-col lg:flex-row text-center justify-center gap-4">
+        <!-- <a href="" class="bg-white text-black rounded-lg py-1.5 px-6 text-lg">
+          Agendar una videollamada
+        </a> -->
+        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="rounded-lg py-1.5 px-6 text-lg border border-white">
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="p-4 lg:py-6 lg:px-20 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
+        <a href="/">
+          <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
+        </a>
+        <div class="flex gap-4 lg:text-lg">
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
+          <i>→</i>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
+          <i>→</i>
+          <!-- <a href="#" class="italic">Aviso de privacidad</a>
+          <i>→</i> -->
+        </div>
+      </div>
+      <hr class="border-white">
+      <div class="text-center w-full mt-4 font-light">
+        <p>© 2025 RMD. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+
+    <script>
+      function showTab(tabId) {
+        // Hide all tab panes
+        document.querySelectorAll(".tab-pane").forEach((pane) => {
+          pane.classList.add("hidden");
+        });
+
+        // Show the selected tab pane
+        document.getElementById(tabId).classList.remove("hidden");
+
+        // Update active tab styling
+        document.querySelectorAll('[data-tab]').forEach(button => {
+            button.classList.remove('bg-black', 'text-white');
+            button.classList.add('text-gray-600');
+        });
+        const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
+        activeButton.classList.remove('text-gray-600');
+        activeButton.classList.add('bg-black', 'text-white');
+      }
+
+      // Show the first tab by default on page load
+      document.addEventListener('DOMContentLoaded', () => {
+        showTab('tab1');
+      });
+    </script>
+    <script>
+      const accItems = document.querySelectorAll(".acc-item")
+      accItems.forEach(accItem => {
+        accItem.addEventListener('click', () => {
+          accItem.classList.toggle("open")
+          accItem.classList.toggle("close")
+          if (accItem.classList.contains("open")) {
+            closeOtherAccordions(accItem)
+          }
+        })
+      })
+
+      const closeOtherAccordions = (activeAcc) => {
+        accItems.forEach(accItem => {
+          if (accItem !== activeAcc && accItem.classList.contains("open")) {
+            accItem.classList.toggle("open")
+            accItem.classList.toggle("close")
+          }
+        })
+      }
+    </script>
+  </body>
 </html>
