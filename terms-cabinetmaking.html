@@ -1,0 +1,344 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Términos y Condiciones - Servicios de Carpintería y Fabricación de Muebles a Medida - RemodelaMiDepa</title>
+  <link rel="icon" href="./assets/logo-rmd.png" type="image/x-icon"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./main.css" />
+ </head>
+  <body class="">
+    <!-- Whatsapp widget -->
+    <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="fixed bottom-6 right-6 z-10">
+      <img src="./assets/whatsapp-icon.png" alt="Ícono de WhatsApp" class="h-16 w-16">
+    </a>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#294038] shadow-sm flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-4">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+        <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+      </a>
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
+        <a href="projects.html" class="text-white hover:text-gray-200">Proyecto destacado</a>
+        <a href="index.html#contact" class="bg-white text-black rounded-lg px-4 py-1 hover:bg-gray-100">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-white transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-white transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-white transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="./index.html">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyecto destacado
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="index.html#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-12 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="./terms-conditions.html">Términos y condiciones</a>
+            <i>→</i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-white">
+      <section class="py-12 lg:py-20 px-6 lg:px-20">
+        <div class="max-w-4xl mx-auto">
+          <!-- Back link -->
+          <a href="./terms-conditions.html" class="inline-flex items-center gap-2 text-[#294038] hover:underline mb-8">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </a>
+
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">
+            TÉRMINOS Y CONDICIONES
+          </h1>
+          <h2 class="text-xl lg:text-2xl font-light mb-12">
+            TBD - Servicios de Fabricación de Muebles a Medida
+          </h2>
+
+          <div class="prose prose-lg max-w-none font-light space-y-8">
+            <div class="mt-12 p-6 bg-[#F4F4F4] rounded-lg">
+              <p>
+                <strong>Última actualización:</strong> Diciembre 2025
+              </p>
+            </div>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">1. Alcance del Servicio</h3>
+              <p class="mb-4">
+                Los servicios de fabricación de muebles a medida incluyen, según lo especificado en la cotización:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Diseño y desarrollo de planos técnicos de mobiliario</li>
+                <li>Selección de materiales y acabados</li>
+                <li>Fabricación en taller especializado</li>
+                <li>Instalación y montaje en el lugar del proyecto</li>
+                <li>Ajustes finales y detalles de acabado</li>
+              </ul>
+              <p class="mt-4">
+                El alcance específico se define en la cotización y puede variar según las necesidades del cliente y la complejidad del proyecto.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">2. Proceso de Trabajo</h3>
+              <p class="mb-4">
+                El servicio de fabricación de muebles a medida se desarrolla en las siguientes etapas:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Levantamiento:</strong> Toma de medidas precisas en el sitio del proyecto</li>
+                <li><strong>Diseño:</strong> Desarrollo de planos técnicos y propuesta de materiales/acabados</li>
+                <li><strong>Aprobación:</strong> Validación del cliente sobre diseño, materiales y cotización final</li>
+                <li><strong>Fabricación:</strong> Producción del mobiliario en taller especializado</li>
+                <li><strong>Instalación:</strong> Entrega, montaje y ajustes finales en obra</li>
+              </ul>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">3. Tiempos de Entrega</h3>
+              <p class="mb-4">
+                Los tiempos de fabricación e instalación varían según:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Complejidad y cantidad de muebles</li>
+                <li>Disponibilidad de materiales seleccionados</li>
+                <li>Carga de trabajo del taller en el momento de la contratación</li>
+                <li>Condiciones del sitio de instalación</li>
+              </ul>
+              <p class="mt-4">
+                El tiempo estimado será comunicado en la cotización y puede ajustarse según las condiciones mencionadas.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">4. Condiciones de Pago</h3>
+              <p class="mb-4">
+                El esquema de pagos para fabricación de muebles a medida es:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>50% anticipo al confirmar el proyecto (compra de materiales e inicio de fabricación)</li>
+                <li>30% a mitad de fabricación o previo a instalación</li>
+                <li>20% contra entrega final e instalación completa</li>
+              </ul>
+              <p class="mt-4">
+                Los porcentajes pueden variar según el monto y alcance del proyecto. La fabricación no inicia sin el anticipo correspondiente.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">5. Modificaciones al Diseño</h3>
+              <p class="mb-4">
+                Se incluyen hasta 2 rondas de ajustes sobre la propuesta inicial de diseño, siempre que:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>No impliquen cambio en las dimensiones principales</li>
+                <li>No requieran cambio de materiales ya cotizados</li>
+                <li>Se soliciten antes de iniciar la fabricación</li>
+              </ul>
+              <p class="mt-4">
+                Modificaciones adicionales o cambios una vez iniciada la fabricación generarán costos adicionales que serán cotizados oportunamente.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">6. Garantía</h3>
+              <p class="mb-4">
+                RemodelaMiDepa ofrece las siguientes garantías sobre muebles fabricados:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li><strong>1 año:</strong> Estructura y ensambles del mueble</li>
+                <li><strong>6 meses:</strong> Acabados, pintura y recubrimientos</li>
+                <li><strong>3 meses:</strong> Herrajes, bisagras y mecanismos móviles</li>
+              </ul>
+              <p class="mt-4">
+                La garantía NO cubre:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Daños por mal uso, sobrepeso o modificaciones por terceros</li>
+                <li>Desgaste natural por uso normal</li>
+                <li>Exposición directa a humedad, agua o rayos UV (salvo especificación contraria)</li>
+                <li>Daños durante mudanzas o reubicaciones</li>
+              </ul>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">7. Responsabilidades del Cliente</h3>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Proporcionar acceso al inmueble para levantamiento de medidas</li>
+                <li>Facilitar acceso para instalación en horarios acordados</li>
+                <li>Garantizar que el sitio esté desalojado y limpio para instalación</li>
+                <li>Verificar que no existan trabajos de albañilería, pintura o instalaciones pendientes en las áreas de instalación</li>
+                <li>Informar sobre restricciones de acceso, horarios del edificio o permisos necesarios</li>
+              </ul>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">8. Entrega e Instalación</h3>
+              <p class="mb-4">
+                La instalación de muebles incluye:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Traslado del mobiliario al sitio</li>
+                <li>Armado y montaje según diseño</li>
+                <li>Nivelación y fijación a muros (cuando aplique)</li>
+                <li>Instalación de herrajes y accesorios</li>
+                <li>Limpieza del área de trabajo</li>
+              </ul>
+              <p class="mt-4">
+                Al momento de la entrega, se realiza inspección conjunta con el cliente para verificar:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Correcta instalación y funcionamiento</li>
+                <li>Acabados según lo especificado</li>
+                <li>Ausencia de defectos visibles</li>
+              </ul>
+              <p class="mt-4">
+                Cualquier observación debe reportarse durante la inspección de entrega. El último pago (20%) se libera contra firma de conformidad.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">9. Cancelaciones</h3>
+              <p class="mb-4">
+                <strong>Antes de iniciar fabricación:</strong>
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Se reembolsa el 70% del anticipo pagado</li>
+                <li>Se retiene el 30% por concepto de diseño y gestión</li>
+              </ul>
+              <p class="mt-4 mb-4">
+                <strong>Después de iniciar fabricación:</strong>
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>No hay reembolso del anticipo</li>
+                <li>Se cobra por materiales adquiridos y trabajo realizado</li>
+                <li>El cliente puede optar por recibir el mobiliario en el estado en que se encuentre</li>
+              </ul>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">10. Materiales y Acabados</h3>
+              <p class="mb-4">
+                Los materiales utilizados corresponden a los especificados en la cotización. En caso de que algún material no esté disponible al momento de la fabricación:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Se notificará al cliente inmediatamente</li>
+                <li>Se propondrán alternativas de calidad y precio similar</li>
+                <li>El cliente autorizará el cambio antes de continuar</li>
+              </ul>
+              <p class="mt-4">
+                Los acabados y tonalidades pueden presentar variaciones respecto a muestras o renders, debido a características naturales de los materiales.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">11. Limitación de Responsabilidad</h3>
+              <p class="mb-4">
+                RemodelaMiDepa no será responsable de:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Daños a muros, pisos o elementos del inmueble que presenten condiciones estructurales deficientes no reportadas previamente</li>
+                <li>Diferencias de medidas si el cliente no permite levantamiento profesional en sitio</li>
+                <li>Problemas de instalación derivados de trabajos de terceros realizados después del levantamiento</li>
+                <li>Daños al mobiliario durante la instalación si el sitio no está en condiciones adecuadas</li>
+              </ul>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">12. Uso de Imágenes</h3>
+              <p class="mb-4">
+                RemodelaMiDepa se reserva el derecho de fotografiar y documentar el mobiliario instalado para fines de portafolio, marketing y redes sociales. Si el cliente no desea que su proyecto sea publicado, debe notificarlo por escrito antes de la instalación.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">13. Jurisdicción</h3>
+              <p class="mb-4">
+                Estos términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier disputa será resuelta en tribunales de Ciudad de México.
+              </p>
+            </section>
+
+            <div class="mt-12 p-6 bg-[#F4F4F4] rounded-lg">
+              <p class="mb-4">
+                <strong>Última actualización:</strong> Diciembre 2025
+              </p>
+              <p>
+                Para preguntas sobre estos términos, contáctanos por
+                <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="text-[#294038] underline font-medium">WhatsApp</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 lg:py-6 lg:px-20 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
+        <a href="./index.html">
+          <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
+        </a>
+        <div class="flex gap-4 lg:text-lg">
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
+          <i>→</i>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
+          <i>→</i>
+          <a href="./terms-conditions.html" class="italic">Términos y condiciones</a>
+          <i>→</i>
+        </div>
+      </div>
+      <hr class="border-white">
+      <div class="text-center w-full mt-4 font-light">
+        <p>© 2025 RMD. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

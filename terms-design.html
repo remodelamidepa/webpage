@@ -1,0 +1,444 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Términos y Condiciones - Servicios de Diseño de Interiores - RemodelaMiDepa</title>
+  <link rel="icon" href="./assets/logo-rmd.png" type="image/x-icon"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./main.css" />
+ </head>
+  <body class="">
+    <!-- Whatsapp widget -->
+    <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="fixed bottom-6 right-6 z-10">
+      <img src="./assets/whatsapp-icon.png" alt="Ícono de WhatsApp" class="h-16 w-16">
+    </a>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#294038] shadow-sm flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-4">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+        <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+      </a>
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
+        <a href="projects.html" class="text-white hover:text-gray-200">Proyecto destacado</a>
+        <a href="index.html#contact" class="bg-white text-black rounded-lg px-4 py-1 hover:bg-gray-100">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-white transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-white transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-white transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="./index.html">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyecto destacado
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="index.html#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-12 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="./terms-conditions.html">Términos y condiciones</a>
+            <i>→</i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-white">
+      <section class="py-12 lg:py-20 px-6 lg:px-20">
+        <div class="max-w-4xl mx-auto">
+          <!-- Back link -->
+          <a href="./terms-conditions.html" class="inline-flex items-center gap-2 text-[#294038] hover:underline mb-8">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </a>
+
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">
+            TÉRMINOS Y CONDICIONES
+          </h1>
+          <h2 class="text-xl lg:text-2xl font-light mb-12">
+            Servicios de Diseño de Interiores
+          </h2>
+
+          <div class="prose prose-lg max-w-none font-light space-y-8">
+
+
+            <div class="mt-12 p-6 bg-[#F4F4F4] rounded-lg">
+              <p>
+                <strong>Última actualización:</strong> Diciembre 2025
+              </p>
+            </div>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">1. Objeto del servicio</h3>
+              <p class="mb-4">
+                Remodela Mi Depa ofrece servicios de diseño de interiores que consisten en el
+                desarrollo de propuestas creativas para espacios habitacionales, incluyendo
+                análisis del espacio, propuestas de distribución, selección de acabados,
+                iluminación, mobiliario y visualización mediante planos y/o renders, según lo
+                acordado con el cliente.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">2. Alcance del servicio de diseño</h3>
+              <p class="mb-4">
+                El servicio de diseño contratado se limita exclusivamente al desarrollo del
+                proyecto de diseño de interiores acordado con el cliente, conforme al alcance,
+                entregables y condiciones comunicadas por Remodela Mi Depa a través de
+                cotización, mensaje electrónico, medios digitales (incluyendo WhatsApp) o
+                cualquier otro medio previamente aceptado por el cliente.
+              </p>
+              <p>
+                La contratación del servicio se considerará confirmada una vez que el cliente
+                haya manifestado su aceptación por cualquier medio y/o realizado el pago
+                correspondiente, sin que sea indispensable la firma física de una cotización.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">3. Servicios no incluidos</h3>
+              <p class="mb-4">
+                El servicio de diseño de interiores no incluye, salvo que se indique expresamente:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Ejecución de obra o construcción.</li>
+                <li>Coordinación, supervisión o dirección de obra.</li>
+                <li>
+                  Ingenierías complementarias (estructural, eléctrica, hidrosanitaria, entre
+                  otras).
+                </li>
+                <li>
+                  Trámites, permisos o gestorías ante autoridades o terceros (licencias de
+                  construcción, manifestaciones, CFE, SACMEX, Protección Civil, sindicatos,
+                  entre otros).
+                </li>
+                <li>Costos derivados de obra, materiales o mano de obra.</li>
+              </ul>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">4. Proceso de trabajo</h3>
+              <p class="mb-4">
+                El servicio de diseño de interiores se desarrolla a través de un proceso
+                estructurado que permite comprender las necesidades del cliente, explorar
+                soluciones de diseño y llegar a una definición final alineada con los objetivos
+                del proyecto.
+              </p>
+              <p class="mb-4">
+                De manera general, el proceso contempla las siguientes etapas:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mb-4">
+                <li>
+                  <strong>Análisis y entendimiento del proyecto</strong>, a partir de la información
+                  proporcionada por el cliente, incluyendo necesidades funcionales, preferencias
+                  estéticas y referencias.
+                </li>
+                <li>
+                  <strong>Desarrollo de la propuesta inicial de diseño</strong>, que presenta el
+                  concepto general del proyecto y las primeras soluciones espaciales, materiales
+                  y visuales.
+                </li>
+                <li>
+                  <strong>Ajustes y refinamiento del diseño</strong>, incorporando la retroalimentación
+                  del cliente dentro del alcance acordado.
+                </li>
+                <li>
+                  <strong>Definición final del diseño</strong>, en la que se consolida la propuesta
+                  para su entrega.
+                </li>
+              </ul>
+              <p>
+                Estas etapas forman parte de un flujo de trabajo interno y pueden adaptarse según
+                la naturaleza y complejidad de cada proyecto, sin que ello implique un compromiso
+                rígido de fases, tiempos o entregables específicos.
+              </p>
+            </section>
+
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">5. Tiempos de entrega</h3>
+              <p class="mb-4">
+                Los tiempos de desarrollo y entrega del proyecto de diseño de interiores varían
+                en función del alcance específico de cada proyecto, la complejidad del espacio
+                y la información proporcionada por el cliente.
+              </p>
+              <p class="mb-4">
+                Los plazos estimados serán comunicados al cliente una vez confirmado el
+                servicio y una vez que Remodela Mi Depa cuente con toda la información necesaria
+                para iniciar el proyecto.
+              </p>
+              <p>
+                Los tiempos de entrega estarán sujetos a la validación y aprobación oportuna por
+                parte del cliente. Cualquier retraso en la entrega de información,
+                retroalimentación o aprobaciones podrá modificar las fechas originalmente
+                estimadas, sin que ello implique incumplimiento por parte de Remodela Mi Depa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">6. Cambios y revisiones de diseño</h3>
+              <p class="mb-4">
+                El servicio de diseño de interiores incluye hasta tres (3) rondas de ajustes
+                sobre la primera propuesta presentada, siempre que dichos ajustes se mantengan
+                dentro del alcance original del proyecto.
+              </p>
+              <p class="mb-4">
+                Se consideran ajustes incluidos aquellos relacionados con modificaciones
+                razonables en colores, acabados, iluminación o disposición de elementos,
+                siempre que no impliquen una redefinición integral del concepto, la distribución
+                general o los criterios principales del diseño.
+              </p>
+              <p class="mb-4">
+                Las solicitudes de cambios deberán realizarse dentro de un plazo máximo de
+                treinta (30) días naturales posteriores a la entrega de la primera propuesta de
+                diseño. Transcurrido dicho plazo, cualquier ajuste adicional podrá considerarse
+                como un nuevo proyecto.
+              </p>
+              <p>
+                En caso de que el cliente solicite cambios que excedan el alcance originalmente
+                acordado, dichos ajustes podrán ser cotizados de forma independiente como
+                trabajo adicional. La solicitud de cambios adicionales podrá modificar los
+                tiempos de entrega previamente estimados.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                7. Presupuestos derivados del diseño y ajustes al alcance
+              </h3>
+              <p class="mb-4">
+                Como parte del servicio de diseño, Remodela Mi Depa podrá elaborar uno o más
+                presupuestos derivados de la propuesta desarrollada, ya sea para servicios de
+                ejecución, carpintería, mobiliario u otros alcances relacionados con el proyecto.
+              </p>
+              <p class="mb-4">
+                Dichos presupuestos se construyen considerando el proyecto como un conjunto
+                integral, tomando en cuenta la planeación, los volúmenes, la secuencia de trabajo
+                y la lógica general de ejecución. Esto permite optimizar recursos, materiales y
+                costos al evaluar el proyecto en su totalidad.
+              </p>
+              <p class="mb-4">
+                Por esta razón, cuando se realizan modificaciones al diseño o cuando se solicita
+                ajustar, eliminar o sustituir uno o más conceptos dentro de un presupuesto,
+                dichos cambios pueden impactar otros conceptos, cantidades o precios, aun cuando
+                el diseño general no se modifique.
+              </p>
+              <p>
+                En estos casos, los presupuestos podrán ser revisados y actualizados para reflejar
+                correctamente las nuevas condiciones del proyecto. Cualquier ajuste será
+                comunicado al cliente de forma clara antes de avanzar.
+              </p>
+            </section>
+
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                8. Honorarios, anticipos y forma de pago
+              </h3>
+              <p class="mb-4">
+                Los honorarios por los servicios de diseño de interiores serán los indicados en
+                la cotización o comunicación aceptada por el cliente.
+              </p>
+              <p class="mb-4">
+                Para iniciar el desarrollo del proyecto, el cliente deberá realizar un anticipo
+                equivalente al sesenta por ciento (60%) del monto total del servicio de diseño.
+              </p>
+              <p class="mb-4">
+                El cuarenta por ciento (40%) restante deberá ser cubierto una vez aprobado el
+                diseño final y previo a la entrega de los entregables finales del proyecto.
+              </p>
+              <p class="mb-4">
+                La contratación del servicio se considerará confirmada una vez que el cliente
+                haya realizado el pago del anticipo y/o haya manifestado su aceptación por
+                cualquier medio electrónico o digital, incluyendo mensajes de WhatsApp o correo
+                electrónico.
+              </p>
+              <p class="mb-4">
+                En caso de retraso en los pagos, Remodela Mi Depa podrá reprogramar o suspender
+                la entrega de los entregables correspondientes, sin que ello implique
+                incumplimiento o responsabilidad por retrasos en los tiempos originalmente
+                estimados.
+              </p>
+              <p>
+                Como beneficio adicional, en caso de que el cliente decida contratar con
+                Remodela Mi Depa los servicios de ejecución de obra derivados del proyecto de
+                diseño, se otorgará un descuento equivalente al quince por ciento (15%) del
+                costo del servicio de diseño contratado. Dicho descuento no se aplica como
+                reembolso ni reducción del pago del proyecto de diseño, sino que será reflejado
+                como un concepto de descuento dentro del presupuesto final de la obra, una vez
+                que esta sea formalmente contratada. Este beneficio será aplicable únicamente si
+                la contratación de los servicios de obra se realiza dentro de los treinta (30)
+                días naturales posteriores a la entrega final del diseño.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">9. Cancelaciones y devoluciones</h3>
+              <p class="mb-4">
+                En caso de que el cliente decida cancelar el servicio de diseño de interiores una
+                vez iniciado el proyecto, no habrá devolución de los pagos realizados, ya que
+                estos corresponden a honorarios por servicios profesionales y tiempo de trabajo
+                asignado.
+              </p>
+              <p class="mb-4">
+                Si la cancelación ocurre después de iniciado el desarrollo del proyecto,
+                Remodela Mi Depa conservará los importes pagados hasta ese momento,
+                independientemente del grado de avance alcanzado.
+              </p>
+              <p>
+                En caso de que el cliente cancele el proyecto antes de iniciar formalmente el
+                desarrollo del diseño, Remodela Mi Depa se reserva el derecho de retener el
+                anticipo como compensación por la planeación, reservación de agenda y recursos
+                asignados.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                10. Propiedad intelectual y uso de materiales
+              </h3>
+              <p class="mb-4">
+                Todos los diseños, planos, renders, visualizaciones, propuestas conceptuales y
+                materiales desarrollados por Remodela Mi Depa como parte del servicio de diseño
+                de interiores constituyen propiedad intelectual de Remodela Mi Depa.
+              </p>
+              <p class="mb-4">
+                El cliente adquiere el derecho de uso de dichos materiales exclusivamente para
+                la ejecución y disfrute del proyecto para el cual fueron desarrollados, sin que
+                ello implique la cesión total de los derechos de autor ni la autorización para su
+                reproducción, modificación o uso con terceros sin consentimiento previo.
+              </p>
+              <p class="mb-4">
+                Al contratar los servicios de diseño, el cliente autoriza a Remodela Mi Depa a
+                utilizar imágenes, renders, planos y fotografías del proyecto (incluyendo
+                imágenes del espacio antes, durante y después de la intervención) para fines de
+                difusión, portafolio y promoción en medios digitales, impresos y redes sociales.
+              </p>
+              <p>
+                En caso de que el cliente prefiera que su proyecto no sea publicado o desee la
+                remoción de material previamente publicado, podrá solicitarlo por escrito.
+                Remodela Mi Depa atenderá dicha solicitud en un plazo razonable, respetando la
+                confidencialidad del cliente.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">11. Responsabilidades del cliente</h3>
+              <p class="mb-4">
+                El cliente se compromete a proporcionar de manera oportuna y veraz toda la
+                información necesaria para el desarrollo del proyecto, incluyendo medidas,
+                fotografías, referencias, requerimientos funcionales y cualquier otra
+                información relevante solicitada por Remodela Mi Depa.
+              </p>
+              <p>
+                Remodela Mi Depa no será responsable por retrasos, ajustes o modificaciones en
+                los tiempos de entrega derivados de la falta de información, cambios de criterio
+                del cliente o demoras en la validación de propuestas.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">12. Limitación de responsabilidad</h3>
+              <p class="mb-4">
+                Los servicios de diseño de interiores proporcionados por Remodela Mi Depa
+                constituyen una propuesta conceptual, desarrollada con base en la información
+                proporcionada por el cliente y en criterios estéticos y funcionales propios del
+                diseño de interiores.
+              </p>
+              <p>
+                Remodela Mi Depa no será responsable por la correcta ejecución del diseño cuando
+                esta sea realizada por terceros ajenos al despacho, ni por variaciones, ajustes
+                o resultados finales derivados de la ejecución en obra, selección de materiales,
+                disponibilidad de productos o decisiones tomadas durante la implementación.
+                Asimismo, Remodela Mi Depa no asume responsabilidad por aspectos estructurales,
+                técnicos o normativos que requieran la intervención de ingenierías o
+                especialistas externos, salvo que dichos servicios hayan sido expresamente
+                contratados.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">13. Aceptación de los términos</h3>
+              <p class="mb-4">
+                La contratación de los servicios de diseño de interiores de Remodela Mi Depa
+                implica la aceptación plena de los presentes Términos y Condiciones.
+              </p>
+              <p>
+                Dicha aceptación podrá manifestarse mediante la firma de una cotización, la
+                confirmación expresa por medios electrónicos o digitales (incluyendo mensajes de
+                WhatsApp o correo electrónico), y/o la realización de cualquier pago relacionado
+                con el servicio.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 lg:py-6 lg:px-20 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
+        <a href="./index.html">
+          <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
+        </a>
+        <div class="flex gap-4 lg:text-lg">
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
+          <i>→</i>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
+          <i>→</i>
+          <a href="./terms-conditions.html" class="italic">Términos y condiciones</a>
+          <i>→</i>
+        </div>
+      </div>
+      <hr class="border-white">
+      <div class="text-center w-full mt-4 font-light">
+        <p>© 2025 RMD. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
