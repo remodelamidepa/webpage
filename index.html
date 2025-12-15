@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <script>
     window.LINKDRIP_PIXEL_ID = '8-6QbPtQV3DGgfx-n9xmA';
     (function () {
@@ -79,7 +80,7 @@
             </a>
             <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
               href="projects.html">
-              Proyectos
+              Proyecto destacado
             </a>
             <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
               href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">
@@ -100,48 +101,51 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section class="py-20 mx-auto px-6 lg:px-0" id="hero">
-      <div class="mb-6 lg:mb-12 flex justify-center flex-col lg:flex-row">
-        <h1 class="hero-title mb-6">
-          <span class="font-light">TU ESPACIO SOÑADO,</span> <br />
-          <span class="lg:ml-14">SIN QUE TENGAS QUE MOVER</span> <br />
-          <span class="flex items-center">
-            <span class="mr-4">
-              UN DEDO
-            </span>
-            <span class="text-[18px] leading-tight hidden lg:block">
-              Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. <br> Tu solo entras y disfrutas.
-            </span>
-          </span>
-        </h1>
-        <p class="block lg:hidden font-light">
-          Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. Tu solo entras y disfrutas.
-        </p>
-      </div>
-      <div class="flex flex-col lg:flex-row justify-center gap-3 text-lg">
-        <!-- <a href="#contact" class="py-2 px-4 text-center bg-black text-white rounded-lg">
-          Agendar videollamada
-        </a> -->
-        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="border border-black text-center py-2 px-4 text-black rounded-lg">
-          Escríbenos por WhatsApp
-        </a>
-      </div>
-    </section>
-    <!-- Galería -->
-    <section class="h-[400px] lg:h-[500px]" id="about">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/swiper-1.png" alt="Imagen de la galería" height="100px">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/project-image-2.png" alt="Imagen de la galería" height="100px">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/project-image-3.png" alt="Imagen de la galería" height="100px">
+    <section class="py-10 lg:py-20 mx-auto px-6 lg:px-20" id="hero">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Left Column: Text Content -->
+        <div>
+          <h1 class="hero-title mb-6">
+            <span class="font-light">TU ESPACIO SOÑADO,</span> <br />
+            <span>SIN QUE TENGAS QUE MOVER</span> <br />
+            <span>UN DEDO</span>
+          </h1>
+          <p class="font-light mb-8 text-lg">
+            Diseñamos y ejecutamos todo: planos, obra, mobiliario y acabados. <br class="hidden lg:block"> Tu solo entras y disfrutas.
+          </p>
+          <div class="flex flex-col lg:flex-row gap-3 text-lg">
+            <!-- <a href="#contact" class="py-2 px-4 text-center bg-black text-white rounded-lg">
+              Agendar videollamada
+            </a> -->
+            <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="border border-black text-center py-2 px-4 text-black rounded-lg hover:bg-black hover:text-white transition-colors">
+              Escríbenos por WhatsApp
+            </a>
           </div>
         </div>
-        <div class="swiper-pagination color-black text-black "></div>
+
+        <!-- Right Column: Image Gallery -->
+        <div class="h-[300px] lg:h-[600px]" id="about">
+          <div class="swiper mySwiper h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="./assets/hero/roof-horizonte.png" class="glightbox block w-full h-full" data-gallery="hero">
+                  <img src="./assets/hero/roof-horizonte.png" alt="Imagen de la galería" class="cursor-pointer">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./assets/hero/roof.png" class="glightbox block w-full h-full" data-gallery="hero">
+                  <img src="./assets/hero/roof.png" alt="Imagen de la galería" class="cursor-pointer">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./assets/hero/sala.png" class="glightbox block w-full h-full" data-gallery="hero">
+                  <img src="./assets/hero/sala.png" alt="Imagen de la galería" class="cursor-pointer">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Por qué confiar -->
@@ -312,7 +316,9 @@
         </div>
       </div>
       <div class="order-first lg:order-last col-span-2 lg:col-span-1 w-full">
-        <img src="./assets/build-image.png" class="w-full object-cover h-full" alt="Imagen de construcción">
+        <a href="./assets/proyecto-destacado.png" class="glightbox block w-full h-full" data-gallery="proyecto-destacado">
+          <img src="./assets/proyecto-destacado.png" class="w-full object-cover h-full cursor-pointer" alt="Imagen de construcción">
+        </a>
       </div>
     </section>
     <!-- Testimonios -->
@@ -332,9 +338,9 @@
           <p>Lo mejor fue que no tuvimos que estar pendientes de nada: todo avanzó con orden y claridad.”</p>
         </div>
         <div class="flex items-center gap-6 mt-10">
-          <div class="rounded-full overflow-hidden">
+          <!-- <div class="rounded-full overflow-hidden">
             <img src="./assets/avatar.png" alt="Avatar de cliente">
-          </div>
+          </div> -->
           <p class="font-bold">SOFÍA Y CARLOS</p>
         </div>
       </div>
@@ -764,7 +770,7 @@
           <i>→</i>
           <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
           <i>→</i>
-          <!-- <a href="#" class="italic">Aviso de privacidad</a>
+          <!-- <a href="#" class="italic">Términos y condiciones</a>
           <i>→</i> -->
         </div>
       </div>
@@ -780,11 +786,12 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        speed: 2500,
         spaceBetween: 0,
         centeredSlides: false,
         loop: true,
         autoplay: {
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -794,7 +801,22 @@
       });
     </script>
 
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
+    <!-- Initialize GLightbox -->
+    <script>
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        svg: {
+          close: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>',
+          next: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>',
+          prev: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>'
+        }
+      });
+    </script>
 
     <script>
       function showTab(tabId) {
