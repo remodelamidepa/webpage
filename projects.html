@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      RemodelaMiDepa - Diseño de Interiores
+    </title>
+    <link rel="icon" href="./assets/logo-rmd.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- <script>
+    window.LINKDRIP_PIXEL_ID = '8-6QbPtQV3DGgfx-n9xmA';
+    (function () {
+    d = document;
+    s = d.createElement('script');
+    s.src = 'https://client.linkdrip.com/ld.js';
+    s.async = 1;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    </script> -->
+  
+  </head>
+  <body>
+    <!-- Whatsapp widget -->
+    <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="fixed bottom-6 right-6 z-10">
+      <img src="./assets/whatsapp-icon.png" alt="Ícono de WhatsApp" class="h-16 w-16">
+    </a>
+    <!-- Header -->
+    <header class="flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-10">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+        <img src="./assets/logo-rmd.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+      </a>
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
+        <a href="projects.html" class="text-gray-800 hover:text-teal-700">Proyecto destacado</a>
+        <a href="#contact" class="bg-black text-white rounded-lg px-4 py-1">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-black transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-black transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-black transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="/">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+      
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="/">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyecto destacado
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+      
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-12 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <!-- <a class="hover:opacity-80" href="#privacidad">Aviso de privacidad</a>
+            <i>→</i> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-6 mx-auto" id="hero">
+      <div class="mb-12 lg:px-20">
+        <h1 class="hero-title mb-6">UN DEPA PENSADO <br> PARA CRECER EN FAMILIA</h1>
+        <h2 class="w-full md:w-8/12 lg:w-5/12 mb-4 lg:mb-0 font-light">
+          En este proyecto ayudamos a una familia joven con dos hijos a
+          transformar su depa en un espacio funcional, acogedor y ordenado.
+        </h2>
+        <h2 class="w-full md:w-8/12 lg:w-5/12 font-light">
+          Cada rincón fue diseñado con intención: más almacenaje, muebles 
+          a medida, y un rooftop renovado para disfrutar juntos.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="mx-auto" id="gallery">
+      <div class="grid grid-cols-2">
+
+        <div class="col-span-2 lg:col-span-1 order-1 lg:order-none h-64 lg:h-[700px]">
+          <a href="./assets/projects/yacatas/moodboard/moodboard.pdf" class="glightbox block w-full h-full cursor-pointer" data-gallery="moodboard" data-glightbox="type: external; width: 90vw; height: 90vh;">
+            <img class="w-full h-full object-cover" src="./assets/projects/yacatas/moodboard/moodboard.jpg" alt="Imagen moodboard">
+          </a>
+        </div>
+        <div class="flex items-center bg-[#F4F4F4] lg:px-20 col-span-2 lg:col-span-1 order-2 lg:order-none">
+          <div class="lg:text-right w-full px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
+              <h3>01/</h3>
+              <h3>MOODBOARD INICIAL</h3>
+            </div>
+            <p class="font-light">El punto de partida: un estilo cálido, moderno y funcional, pensado para una familia activa.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center lg:px-20 col-span-2 lg:col-span-1 order-4 lg:order-none">
+          <div class="w-full px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
+              <h3>RENDERS DEL PROYECTO</h3>
+              <h3 class="order-first lg:order-none">02/</h3>
+            </div>
+            <p class="font-light">Antes de comenzar la obra, así visualizamos el espacio con muebles a medida, tonos neutros y soluciones prácticas.</p>
+          </div>
+        </div>
+        <div class="col-span-2 lg:col-span-1 order-3 lg:order-none h-64 lg:h-[700px]">
+          <a href="./assets/projects/yacatas/renders/4.jpg" class="glightbox block w-full h-full cursor-pointer" data-gallery="renders">
+            <img class="w-full h-full object-cover" src="./assets/projects/yacatas/renders/4.jpg" alt="Render sala comedor">
+          </a>
+        </div>
+
+        <!-- Hidden render images for lightbox gallery -->
+        <div class="hidden">
+          <a href="./assets/projects/yacatas/renders/1.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/2.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/3.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/5.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/6.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/7.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/8.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/9.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/10.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/11.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/12.jpg" class="glightbox" data-gallery="renders"></a>
+          <a href="./assets/projects/yacatas/renders/13.jpg" class="glightbox" data-gallery="renders"></a>
+        </div>
+
+        <div class="col-span-2 lg:col-span-1 order-5 lg:order-none h-64 lg:h-[700px]">
+          <a href="./assets/projects/yacatas/resultado/1.jpg" class="glightbox block w-full h-full cursor-pointer" data-gallery="resultados">
+            <img class="w-full h-full object-cover" src="./assets/projects/yacatas/resultado/1.jpg" alt="Imagen resultado sala comedor">
+          </a>
+        </div>
+
+        <!-- Hidden resultado images for lightbox gallery -->
+        <div class="hidden">
+          <a href="./assets/projects/yacatas/resultado/2.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/3.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/4.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/5.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/6.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/7.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/8.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/9.jpg" class="glightbox" data-gallery="resultados"></a>
+          <a href="./assets/projects/yacatas/resultado/10.jpg" class="glightbox" data-gallery="resultados"></a>
+        </div>
+
+        <div class="flex items-center bg-[#F4F4F4] lg:px-20 col-span-2 lg:col-span-1 order-6 lg:order-none">
+          <div class="w-full lg:text-right px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
+              <h3>03/</h3>
+              <h3>FOTOS DEL RESULTADO FINAL</h3>
+            </div>
+            <p class="font-light">El resultado: un depa funcional, con espacios organizados, detalles pensados y una terraza lista para disfrutarse en familia. </p>
+          </div>
+        </div>
+
+        <div class="flex items-center lg:px-20 col-span-2 lg:col-span-1 order-8 lg:order-none">
+          <div class="w-full px-6 py-12 lg:px-0 lg:py-0">
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between text-3xl mb-6">
+              <h3>PLANO DE DISTRIBUCIÓN <br>O MOBILIARIO</h3>
+              <h3 class="order-first lg:order-none">04/</h3>
+            </div>
+            <p class="font-light">Cada solución fue diseñada para resolver un problema real. Desde el acomodo hasta los muebles, todo tiene su lugar.</p>
+          </div>
+        </div>
+        <div class="col-span-2 lg:col-span-1 order-7 lg:order-none h-64 lg:h-[700px]">
+          <a href="./assets/projects/yacatas/planos/librero.pdf" class="glightbox block w-full h-full cursor-pointer" data-gallery="planos" data-glightbox="type: external; width: 90vw; height: 90vh;">
+            <img class="w-full h-full object-cover" src="./assets/projects/yacatas/planos/rooftop.png" alt="Imagen plano de distribucion">
+          </a>
+        </div>
+
+        <div class="hidden">
+          <a href="./assets/projects/yacatas/planos/rooftop.png" class="glightbox" data-gallery="planos"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="lg:px-20 px-6 py-32 bg-[#F4F4F4]">
+      <div class="flex justify-center mb-6 text-center">
+        <h3 class="text-4xl lg:text-7xl">¿QUIERES UN ESPACIO <span class="font-bold"> <br>ASÍ PARA TI?</span></h3>
+      </div>
+      <div class="text-center mb-6 font-light">
+        <p>Agenda una videollamada sin costo y cuéntanos cómo imaginas tu depa.</p>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center gap-3 text-lg">
+        <!-- <a href="#contact" class="py-2 px-4 text-center bg-black text-white rounded-lg">
+          Agendar videollamada
+        </a> -->
+        <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="border border-black text-center py-2 px-4 text-black rounded-lg">
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 lg:py-6 lg:px-20 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
+        <a href="./index.html">
+          <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
+        </a>
+        <div class="flex gap-4 lg:text-lg">
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
+          <i>→</i>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
+          <i>→</i>
+          <!-- <a href="#" class="italic">Términos y condiciones</a>
+          <i>→</i> -->
+        </div>
+      </div>
+      <hr class="border-white">
+      <div class="text-center w-full mt-4 font-light">
+        <p>© 2025 RMD. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Initialize GLightbox -->
+    <script>
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        svg: {
+          close: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>',
+          next: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>',
+          prev: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>'
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/fonnts.com-Aeonik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Mejora la carga */
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/fonnts.com-Aeonik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/fonnts.com-Aeonik_Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Aeonik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  font-weight: normal;
+  font-size: 4.2rem;
+  line-height: 1;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.acc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.75rem 1.25rem; */
+  /* background-color: rgb(77, 124, 15); */
+  color: black;
+  cursor: pointer;
+  /* border-top: 1px solid rgb(101, 163, 13); */
+  /* border-bottom: 1px solid rgb(101, 163, 13); */
+}
+
+.acc-header:hover {
+  /* background-color: rgb(101, 163, 13); */
+}
+
+.acc-header svg {
+  transition-duration: 300ms;
+}
+
+.acc-header p {
+  /* font-weight: 600; */
+}
+
+.acc-body {
+  max-width: 70%;
+  /* background-color: rgb(245, 245, 244); */ /* TODO: uncomment this line when "Conoce al equipo" section is active */
+  /* padding: 0 1.25rem; */
+  font-size: 0.875rem;
+  font-weight: 300;
+  overflow: hidden;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.acc-item {
+  padding: 14px 0;
+  border-bottom: 0.5px solid #201E1F;
+}
+
+.acc-item:first-child {
+  border-top: 0.5px solid #201E1F;
+}
+
+.acc-item.close .acc-body {
+  max-height: 0;
+  opacity: 0;
+}
+
+.acc-item.open .acc-header svg {
+  transform: rotate(180deg);
+}
+
+.acc-item.open .acc-body {
+  max-height: max-content;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  opacity: 1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #294038;
+}
+
+/* GLightbox PDF viewer styling */
+.gslide-inline .ginlined-content {
+  max-width: 95vw !important;
+  max-height: 95vh !important;
+  width: 1200px !important;
+  height: 900px !important;
+}
+
+.gslide-inline .ginlined-content iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .gslide-inline .ginlined-content {
+    width: 95vw !important;
+    height: 90vh !important;
+  }
+}
+
+/* GLightbox controls styling - make them visible */
+.gclose,
+.gnext,
+.gprev {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+}
+
+.gclose:hover,
+.gnext:hover,
+.gprev:hover {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.gclose svg,
+.gnext svg,
+.gprev svg {
+  stroke: white !important;
+}
