@@ -1,0 +1,410 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Términos y Condiciones - Servicios de Carpintería y Fabricación de Muebles a Medida - RemodelaMiDepa</title>
+  <link rel="icon" href="./assets/logo-rmd.png" type="image/x-icon"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./main.css" />
+ </head>
+  <body class="">
+    <!-- Whatsapp widget -->
+    <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="fixed bottom-6 right-6 z-10">
+      <img src="./assets/whatsapp-icon.png" alt="Ícono de WhatsApp" class="h-16 w-16">
+    </a>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#294038] shadow-sm flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-4">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+        <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+      </a>
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
+        <a href="projects.html" class="text-white hover:text-gray-200">Proyecto destacado</a>
+        <a href="index.html#contact" class="bg-white text-black rounded-lg px-4 py-1 hover:bg-gray-100">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-white transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-white transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-white transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="./index.html">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyecto destacado
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="index.html#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-12 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="./terms-conditions.html">Términos y condiciones</a>
+            <i>→</i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-white">
+      <section class="py-12 lg:py-20 px-6 lg:px-20">
+        <div class="max-w-4xl mx-auto">
+          <!-- Back link -->
+          <a href="./terms-conditions.html" class="inline-flex items-center gap-2 text-[#294038] hover:underline mb-8">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </a>
+
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">
+            TÉRMINOS Y CONDICIONES
+          </h1>
+          <h2 class="text-xl lg:text-2xl font-light mb-12">
+            Servicios de Fabricación de Muebles a Medida
+          </h2>
+
+          <div class="prose prose-lg max-w-none font-light space-y-8">
+            <div class="mt-12 p-6 bg-[#F4F4F4] rounded-lg">
+              <p>
+                <strong>Última actualización:</strong> Enero 2026
+              </p>
+            </div>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">1. Objeto del servicio</h3>
+              <p>
+                Remodela Mi Depa ofrece servicios de carpintería a medida que incluyen la
+                <strong>fabricación e instalación</strong> de mobiliario diseñado específicamente
+                para cada proyecto, conforme a lo acordado con el cliente.
+              </p>
+              <p>
+                El servicio de carpintería contempla la producción de piezas personalizadas, su
+                transporte e instalación en sitio, de acuerdo con los alcances definidos en el
+                presupuesto aceptado por el cliente y bajo las condiciones generales establecidas
+                en los presentes Términos y Condiciones.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">2. Alcance del presupuesto</h3>
+              <p class="mb-4">
+                El presupuesto de carpintería describe de manera específica los muebles, piezas y
+                trabajos que serán fabricados e instalados, así como sus dimensiones, materiales,
+                acabados y costos asociados.
+              </p>
+              <p>
+                Cualquier mueble, componente, ajuste o trabajo que no esté expresamente
+                contemplado en el presupuesto no se considera incluido y, en caso de requerirse,
+                será revisado y cotizado por separado antes de su fabricación o instalación.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">3. Naturaleza del material</h3>
+              <p class="mb-4">
+                La carpintería se fabrica utilizando madera y materiales derivados que, por su
+                naturaleza, pueden presentar variaciones en tono, veta, textura y apariencia,
+                así como pequeñas irregularidades propias de su origen y proceso de fabricación.
+              </p>
+              <p class="mb-4">
+                Estas variaciones son características inherentes de los materiales naturales y
+                no se consideran defectos o fallas de fabricación, sino parte de la identidad y
+                acabado de cada pieza.
+              </p>
+              <p>
+                Las muestras, referencias o imágenes utilizadas durante el proceso de diseño y
+                cotización tienen un carácter ilustrativo, por lo que el resultado final puede
+                presentar diferencias naturales respecto a dichas referencias.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                4. Integridad del presupuesto y optimización por lote
+              </h3>
+              <p class="mb-4">
+                El presupuesto de carpintería se elabora considerando el proyecto como un
+                conjunto integral, tomando en cuenta la optimización de materiales, procesos de
+                fabricación y producción por lote.
+              </p>
+              <p class="mb-4">
+                Cuando se solicitan modificaciones en dimensiones, diseño, número de piezas o
+                características de uno o más muebles, dichos cambios pueden afectar la cantidad
+                total de material, los procesos de fabricación y, en consecuencia, los precios
+                de otros elementos incluidos en el presupuesto, aun cuando el resto del diseño
+                se mantenga sin cambios.
+              </p>
+              <p>
+                En estos casos, el presupuesto podrá ser revisado y ajustado para reflejar
+                correctamente las nuevas condiciones del proyecto. Cualquier ajuste será
+                comunicado y cotizado previamente antes de continuar con la fabricación o
+                instalación.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                5. Tiempos de fabricación y ejecución
+              </h3>
+              <p class="mb-4">
+                Los tiempos de fabricación e instalación de la carpintería varían en función del
+                alcance del proyecto, la complejidad de las piezas, los materiales seleccionados
+                y el volumen total de trabajo.
+              </p>
+              <p class="mb-4">
+                Antes de iniciar la fabricación, Remodela Mi Depa comunicará al cliente un
+                <strong>tiempo estimado de ejecución</strong>, el cual se define una vez que el
+                presupuesto ha sido aceptado y se cuenta con las condiciones necesarias para
+                comenzar los trabajos.
+              </p>
+              <p>
+                Cambios en el diseño, ajustes al alcance, retrasos en decisiones del cliente,
+                condiciones del inmueble o eventos ajenos al control de las partes podrán
+                impactar los tiempos originalmente estimados, sin que ello implique
+                incumplimiento por parte de Remodela Mi Depa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">6. Pagos y programación</h3>
+              <p class="mb-4">
+                El esquema de pagos del servicio de carpintería será el indicado en el presupuesto
+                correspondiente y se establece con el objetivo de permitir la correcta
+                planeación, fabricación y adquisición de materiales necesarios para el proyecto.
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mb-4">
+                <li>
+                  <strong>70% de anticipo</strong>, necesario para programar el inicio de la
+                  fabricación y la compra de materiales.
+                </li>
+                <li>
+                  <strong>20% de pago durante el avance</strong>, que deberá cubrirse una vez que
+                  la fabricación de la carpintería se encuentre concluida o en su etapa final,
+                  previo a su instalación.
+                </li>
+                <li>
+                  <strong>10% de pago final</strong>, que deberá liquidarse al concluir la
+                  fabricación e instalación de la carpintería, como parte del cierre del
+                  proyecto.
+                </li>
+              </ul>
+              <p>
+                Para programar el inicio de los trabajos, será indispensable contar con el pago
+                completo del anticipo y con la autorización expresa del presupuesto. En caso de
+                retrasos en los pagos, Remodela Mi Depa podrá ajustar la programación de la
+                fabricación o instalación hasta regularizar la situación, sin que ello implique
+                incumplimiento por su parte.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                7. Cambios, ajustes y trabajos adicionales
+              </h3>
+              <p class="mb-4">
+                Los cambios o ajustes al diseño y alcance de la carpintería deberán solicitarse,
+                preferentemente, <strong>antes de iniciar la fabricación</strong>, con el fin de
+                evitar retrabajos, desperdicio de materiales y afectaciones en los tiempos de
+                entrega.
+              </p>
+              <p class="mb-4">
+                Las modificaciones solicitadas una vez iniciada la fabricación o durante la
+                instalación podrán implicar repetición de procesos, ajustes en materiales y
+                reprogramación de trabajos, por lo que serán consideradas como ajustes o trabajos
+                adicionales.
+              </p>
+              <p>
+                Ningún ajuste o trabajo adicional será ejecutado sin que el cliente haya sido
+                informado previamente de su impacto en costos y tiempos, y sin contar con su
+                aprobación expresa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                8. Condiciones del inmueble y sitio de instalación
+              </h3>
+              <p class="mb-4">
+                La instalación de la carpintería se realizará considerando las condiciones
+                visibles y accesibles del inmueble al momento de iniciar los trabajos en sitio.
+              </p>
+              <p class="mb-4">
+                Muros fuera de escuadra, desniveles, irregularidades en pisos o plafones,
+                instalaciones ocultas u otras condiciones no detectables previamente no se
+                consideran incluidas en el presupuesto original.
+              </p>
+              <p>
+                Cuando se presenten estas situaciones, Remodela Mi Depa informará al cliente y
+                propondrá las soluciones necesarias, así como los ajustes correspondientes en
+                costos y tiempos, previo a continuar con la instalación.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                9. Permisos y gestiones externas
+              </h3>
+              <p class="mb-4">
+                El servicio de carpintería no incluye la gestión de permisos, autorizaciones o
+                trámites ante autoridades, administraciones, condominios o terceros, salvo que se
+                indique expresamente lo contrario en el presupuesto correspondiente.
+              </p>
+              <p>
+                Cualquier retraso derivado de la falta de permisos, accesos o autorizaciones
+                externas podrá impactar la programación o los tiempos de instalación, sin que
+                ello implique incumplimiento por parte de Remodela Mi Depa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                10. Actualización de precios y materiales
+              </h3>
+              <p class="mb-4">
+                Los precios establecidos en el presupuesto de carpintería se calculan considerando
+                las condiciones del mercado y la disponibilidad de materiales vigentes al momento
+                de su elaboración.
+              </p>
+              <p>
+                En caso de variaciones significativas en costos o disponibilidad de materiales,
+                los precios podrán revisarse de manera conjunta con el cliente y ajustarse previo
+                a continuar con la fabricación o instalación.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                11. Eventos de fuerza mayor
+              </h3>
+              <p class="mb-4">
+                Durante la fabricación o instalación de la carpintería pueden presentarse eventos
+                extraordinarios ajenos al control de las partes, tales como sismos, inundaciones,
+                incendios, accidentes o fenómenos naturales.
+              </p>
+              <p class="mb-4">
+                Los trabajos ya ejecutados se considerarán efectivamente realizados. Cualquier
+                reparación o retrabajo derivado de estos eventos será evaluado y cotizado por
+                separado.
+              </p>
+              <p>
+                Estos eventos podrán impactar los tiempos de fabricación e instalación, por lo
+                que el calendario del proyecto será revisado y ajustado de manera razonable.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                12. Entrega, instalación y cierre
+              </h3>
+              <p class="mb-4">
+                Una vez concluida la fabricación e instalación, Remodela Mi Depa notificará al
+                cliente que la carpintería se encuentra lista para su entrega.
+              </p>
+              <p class="mb-4">
+                El pago final deberá realizarse dentro de un plazo máximo de
+                <strong>10 días naturales posteriores a la entrega</strong>.
+              </p>
+              <p>
+                Concluida la entrega y cubierto el pago final, el servicio de carpintería se
+                considerará terminado y el proyecto quedará cerrado.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                13. Limitación de responsabilidad
+              </h3>
+              <p class="mb-4">
+                Remodela Mi Depa no será responsable por daños derivados de intervenciones de
+                terceros, modificaciones no autorizadas, uso distinto al originalmente previsto
+                o condiciones ajenas a los trabajos de carpintería ejecutados.
+              </p>
+              <p>
+                Tampoco se asume responsabilidad por variaciones naturales de los materiales ni
+                por el desgaste normal derivado del uso cotidiano.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                14. Aceptación de los términos
+              </h3>
+              <p class="mb-4">
+                La contratación de los servicios de carpintería implica la aceptación plena de
+                los presentes Términos y Condiciones.
+              </p>
+              <p>
+                Dicha aceptación podrá manifestarse mediante firma, confirmación electrónica o
+                la realización de cualquier pago relacionado con el proyecto.
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 lg:py-6 lg:px-20 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
+        <a href="./index.html">
+          <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
+        </a>
+        <div class="flex gap-4 lg:text-lg">
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
+          <i>→</i>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
+          <i>→</i>
+          <a href="./terms-conditions.html" class="italic">Términos y condiciones</a>
+          <i>→</i>
+        </div>
+      </div>
+      <hr class="border-white">
+      <div class="text-center w-full mt-4 font-light">
+        <p>© <span id="current-year"></span> RMD. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

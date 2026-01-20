@@ -1,0 +1,397 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Términos y Condiciones - Servicios de Obra y Ejecución - RemodelaMiDepa</title>
+  <link rel="icon" href="./assets/logo-rmd.png" type="image/x-icon"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./main.css" />
+ </head>
+  <body class="">
+    <!-- Whatsapp widget -->
+    <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="fixed bottom-6 right-6 z-10">
+      <img src="./assets/whatsapp-icon.png" alt="Ícono de WhatsApp" class="h-16 w-16">
+    </a>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-[#294038] shadow-sm flex justify-between lg:grid lg:grid-cols-2 lg:grid-cols-3 px-6 lg:px-20 py-4">
+      <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+        <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+      </a>
+      <div class="justify-end items-center text-lg gap-4 lg:gap-16 hidden lg:flex">
+        <a href="projects.html" class="text-white hover:text-gray-200">Proyecto destacado</a>
+        <a href="index.html#contact" class="bg-white text-black rounded-lg px-4 py-1 hover:bg-gray-100">Contacto</a>
+      </div>
+      <div>
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" aria-hidden="true" />
+        <!-- Botón/label hamburguesa (se convierte en X) -->
+        <label for="menu-toggle"
+          class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center rounded-md transition"
+          aria-label="Abrir menú">
+          <span class="relative block h-4 w-6">
+            <span
+              class="absolute inset-x-0 top-0 h-[2px] bg-white transition peer-checked:top-1/2 peer-checked:rotate-45 peer-checked:bg-white"></span>
+            <span
+              class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-white transition peer-checked:opacity-0"></span>
+            <span
+              class="absolute inset-x-0 bottom-0 h-[2px] bg-white transition peer-checked:bottom-1/2 peer-checked:-rotate-45 peer-checked:bg-white"></span>
+          </span>
+        </label>
+        <!-- Menú overlay -->
+        <nav
+          class="pointer-events-none fixed inset-0 z-20 flex flex-col bg-[#214438] text-white opacity-0 transition-all duration-200
+                   peer-checked:opacity-100 peer-checked:pointer-events-auto
+                   lg:static lg:inset-auto lg:z-auto lg:flex-row lg:bg-transparent lg:text-gray-900 lg:opacity-100 lg:pointer-events-auto lg:items-center lg:gap-6">
+          <!-- Barra superior: logo + X -->
+          <div class="flex items-center justify-between px-6 py-10 lg:hidden">
+            <a class="col-start-0 col-span-1 lg:col-span-1 lg:col-start-2 flex lg:justify-center" href="./index.html">
+              <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-10 lg:h-18 w-auto">
+            </a>
+            <label for="menu-toggle" class="h-10 w-10 flex items-center justify-center cursor-pointer" aria-label="Cerrar menú">
+              <span class="relative block h-4 w-4">
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 rotate-45 bg-white"></span>
+                <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 -rotate-45 bg-white"></span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Links centrales -->
+          <div class="flex-1 flex flex-col justify-start gap-10 px-10 lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:hidden">
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="./index.html">
+              Inicio
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase pb-10 border-b border-white/30 lg:border-0 lg:pb-0 lg:px-2 hover:opacity-80"
+              href="projects.html">
+              Proyecto destacado
+            </a>
+            <a class="text-center text-sm tracking-[0.2em] font-medium uppercase lg:px-2 hover:opacity-80"
+              href="index.html#contact" onclick="document.getElementById('menu-toggle').checked = false;">
+              Contacto
+            </a>
+          </div>
+
+          <!-- Footer de enlaces -->
+          <div class="flex gap-3 px-6 pb-12 text-sm italic lg:hidden w-full justify-center">
+            <a class="hover:opacity-80" href="https://link.remodelamidepa.com/Wl0On" target="_blank">Contacto</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="https://www.instagram.com/remodelamidepa/" target="_blank" rel="noopener">Instagram</a>
+            <i>→</i>
+            <a class="hover:opacity-80" href="./terms-conditions.html">Términos y condiciones</a>
+            <i>→</i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-white">
+      <section class="py-12 lg:py-20 px-6 lg:px-20">
+        <div class="max-w-4xl mx-auto">
+          <!-- Back link -->
+          <a href="./terms-conditions.html" class="inline-flex items-center gap-2 text-[#294038] hover:underline mb-8">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </a>
+
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">
+            TÉRMINOS Y CONDICIONES
+          </h1>
+          <h2 class="text-xl lg:text-2xl font-light mb-12">
+            Servicios de Obra y Ejecución
+          </h2>
+
+          <div class="prose prose-lg max-w-none font-light space-y-8">
+            <div class="mt-12 p-6 bg-[#F4F4F4] rounded-lg">
+              <p class="mb-4">
+                <strong>Última actualización:</strong> Enero 2026
+              </p>
+            </div>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">1. Objeto del servicio</h3>
+              <p class="mb-4">
+                Remodela Mi Depa ofrece servicios de ejecución de obra y remodelación de espacios
+                habitacionales, enfocados en llevar a cabo los trabajos necesarios para
+                materializar el proyecto acordado con el cliente.
+              </p>
+              <p>
+                El servicio de obra contempla la realización de los trabajos descritos en el
+                presupuesto correspondiente, con el objetivo de ejecutar el proyecto de manera
+                ordenada, funcional y alineada a lo previamente definido.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">2. Alcance del presupuesto</h3>
+              <p class="mb-4">
+                El presupuesto de obra describe de manera puntual los trabajos que se realizarán,
+                así como sus cantidades y costos asociados.
+              </p>
+              <p class="mb-4">
+                Dicho presupuesto tiene como finalidad establecer con claridad qué trabajos están
+                incluidos en el proyecto, mientras que los presentes Términos y Condiciones
+                explican las condiciones generales bajo las cuales se desarrollará la obra.
+              </p>
+              <p>
+                Cualquier trabajo, concepto o ajuste que no esté expresamente contemplado en el
+                presupuesto no se considera incluido y, en caso de requerirse, será revisado y
+                cotizado por separado antes de su ejecución.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                3. Integridad del presupuesto y ajustes
+              </h3>
+              <p class="mb-4">
+                El presupuesto de obra se elabora considerando el proyecto como un conjunto
+                completo, tomando en cuenta la planeación, la secuencia de los trabajos, los
+                volúmenes y la logística necesaria para su correcta ejecución.
+              </p>
+              <p class="mb-4">
+                Por esta razón, cuando el cliente solicita modificar, eliminar o sustituir uno o
+                más conceptos incluidos en el presupuesto, dichos cambios pueden afectar otros
+                trabajos, cantidades o precios, aun cuando el alcance general del proyecto se
+                mantenga.
+              </p>
+              <p>
+                En estos casos, el presupuesto podrá ser revisado y ajustado para reflejar las
+                nuevas condiciones del proyecto. Cualquier modificación será comunicada al
+                cliente para su validación antes de continuar con la ejecución de la obra.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">4. Tiempos de ejecución</h3>
+              <p class="mb-4">
+                Los tiempos de ejecución de la obra varían en función del alcance específico de
+                cada proyecto, las condiciones del inmueble y la naturaleza de los trabajos a
+                realizar.
+              </p>
+              <p class="mb-4">
+                Antes de iniciar la obra, Remodela Mi Depa comunicará al cliente un tiempo
+                estimado de ejecución, el cual se define una vez que el presupuesto ha sido
+                aceptado y se cuenta con las condiciones necesarias para comenzar los trabajos.
+              </p>
+              <p>
+                Dichos tiempos estimados consideran una ejecución continua y ordenada del
+                proyecto. Cualquier ajuste en el alcance, retraso en la entrega de información,
+                decisiones del cliente, condiciones imprevistas del inmueble o falta de
+                cumplimiento en el esquema de pagos podrá impactar los tiempos originalmente
+                estimados, sin que ello implique incumplimiento por parte de Remodela Mi Depa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                5. Pagos y programación de la obra
+              </h3>
+              <p class="mb-4">
+                El esquema de pagos de la obra será el indicado en el presupuesto correspondiente
+                y se establece con el objetivo de permitir una correcta planeación, adquisición
+                de materiales y ejecución ordenada de los trabajos.
+              </p>
+              <p class="mb-4">
+                El esquema de pagos contempla las siguientes etapas:
+              </p>
+              <ul class="list-disc pl-6 space-y-2 mb-4">
+                <li>
+                  <strong>60% de anticipo</strong>, necesario para programar el inicio de la obra y
+                  realizar la planeación y compra inicial de materiales.
+                </li>
+                <li>
+                  <strong>30% de pago durante el avance</strong>, que deberá cubrirse una vez que la
+                  obra haya alcanzado aproximadamente el 70% de avance.
+                </li>
+                <li>
+                  <strong>10% de pago final</strong>, que deberá liquidarse al finalizar la obra,
+                  como parte del cierre del proyecto.
+                </li>
+              </ul>
+              <p>
+                Para programar el inicio de la obra, será indispensable contar con el pago
+                completo del anticipo del 60% y con la autorización expresa del presupuesto. En
+                caso de retrasos en los pagos, Remodela Mi Depa podrá ajustar la programación de
+                la obra o pausar los trabajos hasta regularizar la situación, sin que ello
+                implique incumplimiento por parte de Remodela Mi Depa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                6. Cambios, trabajos adicionales y extraordinarios
+              </h3>
+              <p class="mb-4">
+                Durante la ejecución de la obra, el cliente podrá solicitar ajustes,
+                modificaciones o trabajos adicionales respecto al alcance originalmente
+                contratado.
+              </p>
+              <p class="mb-4">
+                Cualquier cambio solicitado que implique trabajos, materiales, tiempos o
+                alcances no contemplados en el presupuesto original será considerado como un
+                trabajo adicional o extraordinario y deberá ser cotizado por separado.
+              </p>
+              <p>
+                Ningún trabajo adicional será ejecutado sin la comunicación previa de su impacto
+                en costos y tiempos, así como la aprobación expresa del cliente.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                7. Condiciones del inmueble y vicios ocultos
+              </h3>
+              <p class="mb-4">
+                La obra se ejecutará con base en las condiciones visibles y accesibles del
+                inmueble al momento de iniciar los trabajos.
+              </p>
+              <p class="mb-4">
+                En caso de que durante la ejecución se detecten condiciones no identificables
+                previamente, tales como vicios ocultos, daños estructurales, instalaciones en mal
+                estado, filtraciones, humedad o problemas eléctricos o hidráulicos, dichos
+                trabajos no se consideran incluidos en el presupuesto inicial.
+              </p>
+              <p>
+                En estos casos, Remodela Mi Depa informará al cliente y propondrá las soluciones
+                necesarias, así como el ajuste correspondiente en costos y tiempos, previo a
+                continuar con los trabajos relacionados.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                8. Permisos, trámites y gestiones externas
+              </h3>
+              <p class="mb-4">
+                Los servicios de obra de Remodela Mi Depa no incluyen la gestión de permisos,
+                licencias, trámites o autorizaciones ante autoridades, administraciones,
+                condominios o terceros, salvo que se indique expresamente lo contrario en el
+                presupuesto correspondiente.
+              </p>
+              <p>
+                Cualquier retraso derivado de la obtención de permisos o autorizaciones externas
+                podrá impactar el inicio o el avance de la obra, sin que ello implique
+                incumplimiento por parte de Remodela Mi Depa.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                9. Actualización de precios y condiciones del mercado
+              </h3>
+              <p class="mb-4">
+                Los precios establecidos en el presupuesto de obra se calculan considerando las
+                condiciones del mercado vigentes al momento de su elaboración.
+              </p>
+              <p>
+                En caso de variaciones significativas en costos de materiales o condiciones del
+                mercado, los precios podrán revisarse de manera conjunta con el cliente y
+                ajustarse previo a continuar con los trabajos correspondientes.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                10. Entrega, cierre de obra y finiquito
+              </h3>
+              <p class="mb-4">
+                Una vez concluidos los trabajos contemplados en el presupuesto, Remodela Mi Depa
+                notificará al cliente que la obra se encuentra terminada y lista para su entrega.
+              </p>
+              <p>
+                Una vez realizada la entrega y cubierto el pago final, el proyecto se considerará
+                cerrado y finiquitado.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                11. Limitación de responsabilidad
+              </h3>
+              <p class="mb-4">
+                Los servicios de obra se ejecutan con base en el alcance definido en el
+                presupuesto y en las condiciones existentes del inmueble.
+              </p>
+              <p>
+                Remodela Mi Depa no será responsable por retrasos, daños o resultados derivados
+                de decisiones del cliente, intervenciones de terceros o condiciones preexistentes
+                ajenas al control directo del equipo de obra.
+              </p>
+            </section>
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                12. Eventos de fuerza mayor
+              </h3>
+              <p class="mb-4">
+                Durante la ejecución de la obra pueden presentarse eventos extraordinarios ajenos
+                al control de las partes, tales como sismos, inundaciones, incendios, fenómenos
+                naturales, accidentes u otras situaciones similares que afecten parcial o
+                totalmente los trabajos realizados.
+              </p>
+              <p class="mb-4">
+                En caso de que alguno de estos eventos genere daños sobre trabajos que ya hayan
+                sido ejecutados, dichos trabajos se considerarán efectivamente realizados como
+                parte del servicio contratado.
+              </p>
+              <p class="mb-4">
+                Cualquier reparación, reposición o retrabajo derivado de estos eventos será
+                evaluado y, en su caso, cotizado por separado, ya que corresponde a un nuevo
+                alcance no contemplado originalmente en el presupuesto.
+              </p>
+              <p>
+                Este tipo de eventos también podrá impactar los tiempos de ejecución previamente
+                estimados. En dichos casos, el calendario de la obra será revisado y ajustado de
+                manera razonable, informando oportunamente al cliente sobre las nuevas
+                condiciones para continuar con el proyecto.
+              </p>
+            </section>
+
+
+            <section class="mb-12">
+              <h3 class="text-2xl font-bold mb-4">
+                13. Aceptación de los términos
+              </h3>
+              <p class="mb-4">
+                La contratación de los servicios de obra implica la aceptación plena de los
+                presentes Términos y Condiciones.
+              </p>
+              <p>
+                Dicha aceptación podrá manifestarse mediante firma, confirmación electrónica o
+                la realización de cualquier pago relacionado con el proyecto.
+              </p>
+            </section>
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 lg:py-6 lg:px-20 bg-[#294038] text-white font-light">
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 items-center justify-between w-full py-10">
+        <a href="./index.html">
+          <img src="./assets/logo-rmd-white.svg" alt="Logo de RemodelaMiDepa" class="h-16 w-auto">
+        </a>
+        <div class="flex gap-4 lg:text-lg">
+          <a href="https://link.remodelamidepa.com/Wl0On" target="_blank" class="italic">Contacto</a>
+          <i>→</i>
+          <a href="https://www.instagram.com/remodelamidepa/" target="_blank" class="italic">Instagram</a>
+          <i>→</i>
+          <a href="./terms-conditions.html" class="italic">Términos y condiciones</a>
+          <i>→</i>
+        </div>
+      </div>
+      <hr class="border-white">
+      <div class="text-center w-full mt-4 font-light">
+        <p>© <span id="current-year"></span> RMD. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
