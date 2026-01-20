@@ -251,9 +251,10 @@
       </div>
       <hr class="border-white">
       <div class="text-center w-full mt-4 font-light">
-        <p>© 2025 RMD. Todos los derechos reservados.</p>
+        <p>© <span id="current-year"></span> RMD. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
     <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
