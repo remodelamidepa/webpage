@@ -261,6 +261,18 @@
 
     <!-- Initialize GLightbox -->
     <script>
+      // On mobile/touch devices, open PDFs in a new tab instead of the lightbox
+      // to avoid iOS Safari only showing the first page in iframes
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        document.querySelectorAll('a.glightbox[href$=".pdf"]').forEach(function(link) {
+          link.classList.remove('glightbox');
+          link.target = '_blank';
+          link.removeAttribute('data-glightbox');
+          link.removeAttribute('data-gallery');
+        });
+      }
+
       const lightbox = GLightbox({
         touchNavigation: true,
         loop: true,
